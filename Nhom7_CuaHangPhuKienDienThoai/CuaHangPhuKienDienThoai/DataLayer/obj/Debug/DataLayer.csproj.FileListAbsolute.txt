@@ -1,0 +1,6 @@
+C:\Users\vuxec\OneDrive\Máy tính\CuaHangPhuKienDienThoai\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\DataLayer\bin\Debug\DataLayer.dll
+C:\Users\vuxec\OneDrive\Máy tính\CuaHangPhuKienDienThoai\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\DataLayer\bin\Debug\DataLayer.pdb
+C:\Users\vuxec\OneDrive\Máy tính\CuaHangPhuKienDienThoai\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\DataLayer\obj\Debug\DataLayer.csproj.AssemblyReference.cache
+C:\Users\vuxec\OneDrive\Máy tính\CuaHangPhuKienDienThoai\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\DataLayer\obj\Debug\DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\vuxec\OneDrive\Máy tính\CuaHangPhuKienDienThoai\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\DataLayer\obj\Debug\DataLayer.dll
+C:\Users\vuxec\OneDrive\Máy tính\CuaHangPhuKienDienThoai\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\DataLayer\obj\Debug\DataLayer.pdb
