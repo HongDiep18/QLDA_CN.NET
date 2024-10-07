@@ -36,5 +36,17 @@ namespace BLL
             }
             return tmp;
         }
+        public bool insertKH(KhachHangDTO k)
+        {
+            if(KhachHangDAL.InsertKH(k.MaKH,k.TenKH,k.Email,k.SDT,k.DChi))
+                return true;
+            return false;
+        }
+        public bool kt_trung(KhachHangDTO k)
+        {
+            if(KhachHangDAL.KT_TrungMaKH(k.MaKH))
+                return true;
+            return false;
+        }
     }
 }

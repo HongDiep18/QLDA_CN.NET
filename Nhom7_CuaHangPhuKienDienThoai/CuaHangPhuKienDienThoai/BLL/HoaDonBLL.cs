@@ -16,9 +16,9 @@ namespace BLL
             hoaDonDAL= new HoaDonDAL();
             hoaDonDTO= new HoaDonDTO(); 
         }
-        public bool insert_HoaDon(string mahd, string makh)
+        public bool insert_HoaDon(string mahd, string makh,string tong, string giam, string phaitra)
         {
-            if(hoaDonDAL.insertHoaDonDAL(mahd, makh)!=-1)
+            if(hoaDonDAL.insertHoaDonDAL(mahd, makh,tong,giam,phaitra)!=-1)
             {
                 return true;
             }

@@ -38,5 +38,10 @@ namespace GUI
             OpenChildForm(new frmSanPham());
             label1.Text = btn_SanPham.Text;
         }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+           // panel_body.Controls.Add(frmDangNhap);
+        }
     }
 }

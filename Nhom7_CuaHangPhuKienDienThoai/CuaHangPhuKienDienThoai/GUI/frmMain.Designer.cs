@@ -111,6 +111,7 @@
             this.Controls.Add(this.panel_top);
             this.Name = "frmMain";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.panel_left.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).EndInit();
             this.panel_top.ResumeLayout(false);

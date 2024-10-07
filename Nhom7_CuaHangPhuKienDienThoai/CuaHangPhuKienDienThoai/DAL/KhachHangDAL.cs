@@ -38,5 +38,37 @@ namespace DAL
             conn.Close();
             return ds;
         }
+        public bool KT_TrungMaKH(string ma)
+        {
+            string sql = "select count(*) from KHACHANG where MAKH='" + ma + "'";
+            conn.Open();
+            SqlCommand cmd= new SqlCommand(sql, conn);
+            int kt=(int)cmd.ExecuteScalar();
+            conn.Close();
+            if (kt > 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        public bool InsertKH(string ma, string ten, string email, string sdt, string dc)
+        {
+            string sql = "insert into KHACHANG values ('" + ma + "','" + ten + "','" + email + "','" + sdt + "','" + dc + "')";
+            conn.Open();
+            SqlCommand cmd=new SqlCommand(sql, conn);
+            int kt = (int)cmd.ExecuteNonQuery();
+            conn.Close();
+            if (kt > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }    
+        }
     }
 }
