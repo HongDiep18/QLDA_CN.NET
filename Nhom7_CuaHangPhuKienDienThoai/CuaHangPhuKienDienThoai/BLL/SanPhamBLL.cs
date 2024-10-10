@@ -20,5 +20,9 @@ namespace BLL
         {
             return sanphamDAL.get_DanhSachSP();
         }
+        public bool insert_sanPham(SanPhamDTO sanpham)
+        {
+            return sanphamDAL.insert_sanPham(sanpham);
+        }
     }
 }

@@ -43,5 +43,11 @@ namespace GUI
         {
            // panel_body.Controls.Add(frmDangNhap);
         }
+
+        private void btnNhapSanPham_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmNhapKho());
+            label1.Text = btnNhapSanPham.Text;
+        }
     }
 }

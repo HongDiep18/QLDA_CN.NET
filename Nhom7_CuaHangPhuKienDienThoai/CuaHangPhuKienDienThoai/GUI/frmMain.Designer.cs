@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.panel_body = new System.Windows.Forms.Panel();
             this.panel_left = new System.Windows.Forms.Panel();
+            this.btnNhapSanPham = new System.Windows.Forms.Button();
             this.btn_SanPham = new System.Windows.Forms.Button();
             this.pictureBox_logo = new System.Windows.Forms.PictureBox();
             this.panel_top = new System.Windows.Forms.Panel();
@@ -52,12 +53,24 @@
             // panel_left
             // 
             this.panel_left.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel_left.Controls.Add(this.btnNhapSanPham);
             this.panel_left.Controls.Add(this.btn_SanPham);
             this.panel_left.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_left.Location = new System.Drawing.Point(0, 75);
             this.panel_left.Name = "panel_left";
             this.panel_left.Size = new System.Drawing.Size(143, 570);
             this.panel_left.TabIndex = 3;
+            // 
+            // btnNhapSanPham
+            // 
+            this.btnNhapSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhapSanPham.Location = new System.Drawing.Point(0, 70);
+            this.btnNhapSanPham.Name = "btnNhapSanPham";
+            this.btnNhapSanPham.Size = new System.Drawing.Size(143, 74);
+            this.btnNhapSanPham.TabIndex = 2;
+            this.btnNhapSanPham.Text = "Nhập Sản Phẩm";
+            this.btnNhapSanPham.UseVisualStyleBackColor = true;
+            this.btnNhapSanPham.Click += new System.EventHandler(this.btnNhapSanPham_Click);
             // 
             // btn_SanPham
             // 
@@ -128,6 +141,7 @@
         private System.Windows.Forms.PictureBox pictureBox_logo;
         private System.Windows.Forms.Panel panel_top;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnNhapSanPham;
     }
 }
 

@@ -36,6 +36,22 @@ namespace DAL
             conn.Close();
             return ds;
         }
+        public bool insert_sanPham(SanPhamDTO sanPham)
+        {
+            string sql = "insert into SANPHAM values ('" + sanPham.MaSP + "','" + sanPham.TenSP + "','" + sanPham.MoTa + "'," + sanPham.Gia + "," + sanPham.SLTonKo + ",'" + sanPham.MaDM + "')";
+            conn.Open();
+            SqlCommand cmd= new SqlCommand(sql, conn);
+            int kq=(int)cmd.ExecuteNonQuery();
+            conn.Close();
+            if(kq>0)
+            {
+                return true;
+            }    
+            else 
+            {
+                return false; 
+            }
+        }
 
     }
 }

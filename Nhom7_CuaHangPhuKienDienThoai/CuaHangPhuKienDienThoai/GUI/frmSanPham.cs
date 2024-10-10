@@ -36,13 +36,11 @@ namespace GUI
         void Load_DS_KH()
         {
             List<KhachHangDTO> ds = KH.get_ds_KH();
-            //foreach(KhachHangDTO d in ds)
-            //{
-            //    cbo_KH.Items.Add("iuehfiuche");
-            //}    
+            
             cbo_KH.DataSource = ds;
             cbo_KH.DisplayMember = "TenKH";
             cbo_KH.ValueMember = "MaKH";
+           
 
         }
         private void frmSanPham_Load(object sender, EventArgs e)
@@ -56,12 +54,10 @@ namespace GUI
                 lst_SanPham.Items.Add(subitem);
             }
             tab_Xem.TabPages[0].Enabled = false;
-            //tab_Xem.TabPages[1].Enabled = false;
-            //tab_Xem.TabPages[2].Enabled = false;
-            //tab_Xem.TabPages[3].Enabled = false;
-            cbo_KH.SelectedItem = null;
-            Load_DS_KH();
 
+            cbo_KH.SelectedItem = null;//====================================
+            Load_DS_KH();
+            
 
         }
 
@@ -81,6 +77,7 @@ namespace GUI
 
         private void btn_ThanhToan_Click(object sender, EventArgs e)
         {
+            
             if (lst_GioHang.Items.Count > 0)
             {
                 tab_Xem.TabPages[0].Enabled = true;
@@ -224,6 +221,16 @@ namespace GUI
         private void btnHuyKH_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThemKHmoi_Click(object sender, EventArgs e)
+        {
+            tab_Xem.SelectedTab = tabPage_themKHmoi;
         }
     }
 }

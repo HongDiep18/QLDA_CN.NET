@@ -42,8 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChiTietHoaDonDAL.cs" />
+    <Compile Include="ChiTietPN_DAL.cs" />
     <Compile Include="HoaDonDAL.cs" />
     <Compile Include="KhachHangDAL.cs" />
+    <Compile Include="NhaCungCapDAL.cs" />
+    <Compile Include="PhieuNhapDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SanPhamDAL.cs" />
   </ItemGroup>
