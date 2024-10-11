@@ -13,14 +13,16 @@ namespace DTO
         public string Email { get; set; }
         public string SDT { get; set; }
         public string DChi { get; set; }
+        public string PassW {  get; set; }
         public KhachHangDTO() { }
-        public KhachHangDTO(string maKH, string tenKH, string email, string sDT, string dChi)
+        public KhachHangDTO(string maKH, string tenKH, string email, string sDT, string dChi, string passW)
         {
             MaKH = maKH;
             TenKH = tenKH;
             Email = email;
             SDT = sDT;
             DChi = dChi;
+            PassW = passW;
         }
     }
 }

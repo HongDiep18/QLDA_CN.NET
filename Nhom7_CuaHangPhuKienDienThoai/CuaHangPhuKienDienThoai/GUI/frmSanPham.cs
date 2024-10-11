@@ -13,7 +13,7 @@ namespace GUI
 {
     public partial class frmSanPham : Form
     {
-
+        
         SanPhamBLL SP = new SanPhamBLL();
         KhachHangBLL KH= new KhachHangBLL();
         public frmSanPham()
@@ -147,22 +147,22 @@ namespace GUI
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_XuatHoaDon_Click(object sender, EventArgs e)
         {
             HoaDonBLL hoaDonBLL = new HoaDonBLL();
-            ChiTietHoaDonBLL chiTietHoaDonBLL= new ChiTietHoaDonBLL();
+            ChiTietHoaDonBLL chiTietHoaDonBLL = new ChiTietHoaDonBLL();
             //bool kq= hoaDonBLL.insert_HoaDon("HD021",txtTenKH.Text);
-            foreach(ListViewItem tmp in lstThanhToan.Items)
+            foreach (ListViewItem tmp in lstThanhToan.Items)
             {
-                float  temp1;
+                float temp1;
                 int temp;
                 if (int.TryParse(tmp.SubItems[3].Text, out temp) && float.TryParse(tmp.SubItems[2].Text, out temp1))
                 {
                     ChiTietHoaDonDTO dt = new ChiTietHoaDonDTO("HD021", tmp.SubItems[0].Text, temp, temp1);
                     chiTietHoaDonBLL.Insert(dt);
                 }
-                
-            }    
+
+            }
             //if(kq)
             //{
             //    MessageBox.Show("them thanh cong");
@@ -171,7 +171,8 @@ namespace GUI
             //{
             //    MessageBox.Show("Thêm thất bại");
             //}
-
         }
+
+       
     }
 }

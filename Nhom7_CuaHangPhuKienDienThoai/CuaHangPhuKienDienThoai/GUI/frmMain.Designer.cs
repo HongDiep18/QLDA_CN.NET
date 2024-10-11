@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.panel_body = new System.Windows.Forms.Panel();
             this.panel_left = new System.Windows.Forms.Panel();
+            this.btn_Detail_SP = new System.Windows.Forms.Button();
             this.btn_SanPham = new System.Windows.Forms.Button();
             this.pictureBox_logo = new System.Windows.Forms.PictureBox();
             this.panel_top = new System.Windows.Forms.Panel();
@@ -44,20 +45,32 @@
             // 
             this.panel_body.BackColor = System.Drawing.Color.Transparent;
             this.panel_body.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_body.Location = new System.Drawing.Point(143, 75);
+            this.panel_body.Location = new System.Drawing.Point(143, 84);
             this.panel_body.Name = "panel_body";
-            this.panel_body.Size = new System.Drawing.Size(1278, 570);
+            this.panel_body.Size = new System.Drawing.Size(1278, 561);
             this.panel_body.TabIndex = 5;
             // 
             // panel_left
             // 
             this.panel_left.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel_left.Controls.Add(this.btn_Detail_SP);
             this.panel_left.Controls.Add(this.btn_SanPham);
             this.panel_left.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel_left.Location = new System.Drawing.Point(0, 75);
+            this.panel_left.Location = new System.Drawing.Point(0, 84);
             this.panel_left.Name = "panel_left";
-            this.panel_left.Size = new System.Drawing.Size(143, 570);
+            this.panel_left.Size = new System.Drawing.Size(143, 561);
             this.panel_left.TabIndex = 3;
+            // 
+            // btn_Detail_SP
+            // 
+            this.btn_Detail_SP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btn_Detail_SP.Location = new System.Drawing.Point(0, 80);
+            this.btn_Detail_SP.Name = "btn_Detail_SP";
+            this.btn_Detail_SP.Size = new System.Drawing.Size(143, 74);
+            this.btn_Detail_SP.TabIndex = 2;
+            this.btn_Detail_SP.Text = "Chi Tiết Sản Phẩm";
+            this.btn_Detail_SP.UseVisualStyleBackColor = true;
+            this.btn_Detail_SP.Click += new System.EventHandler(this.btn_Detail_SP_Click);
             // 
             // btn_SanPham
             // 
@@ -66,7 +79,7 @@
             this.btn_SanPham.Name = "btn_SanPham";
             this.btn_SanPham.Size = new System.Drawing.Size(143, 74);
             this.btn_SanPham.TabIndex = 1;
-            this.btn_SanPham.Text = "Danh Sánh Sản Phẩm";
+            this.btn_SanPham.Text = "Danh Sách Sản Phẩm";
             this.btn_SanPham.UseVisualStyleBackColor = true;
             this.btn_SanPham.Click += new System.EventHandler(this.btn_SanPham_Click);
             // 
@@ -88,14 +101,14 @@
             this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_top.Location = new System.Drawing.Point(0, 0);
             this.panel_top.Name = "panel_top";
-            this.panel_top.Size = new System.Drawing.Size(1421, 75);
+            this.panel_top.Size = new System.Drawing.Size(1421, 84);
             this.panel_top.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(174, 19);
+            this.label1.Location = new System.Drawing.Point(228, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 35);
             this.label1.TabIndex = 0;
@@ -127,6 +140,7 @@
         private System.Windows.Forms.PictureBox pictureBox_logo;
         private System.Windows.Forms.Panel panel_top;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_Detail_SP;
     }
 }
 

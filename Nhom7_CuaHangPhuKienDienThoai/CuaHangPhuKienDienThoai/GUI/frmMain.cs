@@ -38,5 +38,11 @@ namespace GUI
             OpenChildForm(new frmSanPham());
             label1.Text = btn_SanPham.Text;
         }
+
+        private void btn_Detail_SP_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmDetailSP());
+            label1.Text = btn_SanPham.Text;
+        }
     }
 }
