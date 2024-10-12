@@ -60,6 +60,8 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.btn_LoaiSP = new System.Windows.Forms.Button();
             this.btnThanhToan = new System.Windows.Forms.Button();
+            this.btnThemSPMoi = new System.Windows.Forms.Button();
+            this.btnLamMoi = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -319,7 +321,7 @@
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(468, 326);
+            this.btnThem.Location = new System.Drawing.Point(428, 386);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(174, 44);
             this.btnThem.TabIndex = 18;
@@ -329,7 +331,7 @@
             // 
             // btn_LoaiSP
             // 
-            this.btn_LoaiSP.Location = new System.Drawing.Point(468, 388);
+            this.btn_LoaiSP.Location = new System.Drawing.Point(428, 446);
             this.btn_LoaiSP.Name = "btn_LoaiSP";
             this.btn_LoaiSP.Size = new System.Drawing.Size(174, 44);
             this.btn_LoaiSP.TabIndex = 19;
@@ -339,7 +341,7 @@
             // 
             // btnThanhToan
             // 
-            this.btnThanhToan.Location = new System.Drawing.Point(468, 450);
+            this.btnThanhToan.Location = new System.Drawing.Point(428, 506);
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(174, 44);
             this.btnThanhToan.TabIndex = 20;
@@ -347,11 +349,33 @@
             this.btnThanhToan.UseVisualStyleBackColor = true;
             this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
+            // btnThemSPMoi
+            // 
+            this.btnThemSPMoi.Location = new System.Drawing.Point(429, 326);
+            this.btnThemSPMoi.Name = "btnThemSPMoi";
+            this.btnThemSPMoi.Size = new System.Drawing.Size(174, 44);
+            this.btnThemSPMoi.TabIndex = 21;
+            this.btnThemSPMoi.Text = "Thêm Sản Phẩm Mới";
+            this.btnThemSPMoi.UseVisualStyleBackColor = true;
+            this.btnThemSPMoi.Click += new System.EventHandler(this.btnThemSPMoi_Click);
+            // 
+            // btnLamMoi
+            // 
+            this.btnLamMoi.Location = new System.Drawing.Point(632, 374);
+            this.btnLamMoi.Name = "btnLamMoi";
+            this.btnLamMoi.Size = new System.Drawing.Size(100, 143);
+            this.btnLamMoi.TabIndex = 22;
+            this.btnLamMoi.Text = "Làm Mới";
+            this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
+            // 
             // frmNhapKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1251, 572);
+            this.Controls.Add(this.btnLamMoi);
+            this.Controls.Add(this.btnThemSPMoi);
             this.Controls.Add(this.btnThanhToan);
             this.Controls.Add(this.btn_LoaiSP);
             this.Controls.Add(this.btnThem);
@@ -407,5 +431,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.Button btnThemSPMoi;
+        private System.Windows.Forms.Button btnLamMoi;
     }
 }

@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="ChiTietHoaDonDAL.cs" />
     <Compile Include="ChiTietPN_DAL.cs" />
+    <Compile Include="DanhMucDAL.cs" />
     <Compile Include="HoaDonDAL.cs" />
     <Compile Include="KhachHangDAL.cs" />
     <Compile Include="NhaCungCapDAL.cs" />

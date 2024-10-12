@@ -24,5 +24,21 @@ namespace BLL
         {
             return sanphamDAL.insert_sanPham(sanpham);
         }
+        public List <SanPhamDTO>get_data_theoDM(string ma)
+        {
+            return sanphamDAL.get_DanhSachSP_TheoDanhMuc(ma);
+        }
+        public int DemSLSP_theoDM(string ma)
+        {
+            return sanphamDAL.DemSLSP_TheoDanhMuc(ma);
+        }
+        public bool Xoa_SP(string ma)
+        {
+            return sanphamDAL.Xoa_SP(ma);
+        }
+        public bool Sua_SP(SanPhamDTO tmp)
+        {
+            return sanphamDAL.XuaSanPham(tmp);
+        }
     }
 }

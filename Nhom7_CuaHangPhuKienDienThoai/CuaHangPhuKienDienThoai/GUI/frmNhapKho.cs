@@ -30,6 +30,7 @@ namespace GUI
         }
         public void load_Kho()
         {
+            listView_SanPham.Items.Clear();
             List<SanPhamDTO> ds =spBLL.get_data();
             foreach (SanPhamDTO s in ds)
             {
@@ -40,6 +41,7 @@ namespace GUI
         }
         private void frmNhapKho_Load(object sender, EventArgs e)
         {
+            listView_SanPham.Items.Clear();
             load_NhaCungCap();
             load_Kho();
             txt_NgayNhap.Text = DateTime.Now.ToString();
@@ -125,6 +127,18 @@ namespace GUI
             {
                 MessageBox.Show("Chọn Mặt Hàng Cần Nhập");
             }    
+        }
+
+        private void btnThemSPMoi_Click(object sender, EventArgs e)
+        {
+            frmChiTietSanPham them = new frmChiTietSanPham("ThemMoi");
+            them.ShowDialog();
+        }
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            listView_GioHang.Items.Clear();
+            frmNhapKho_Load(sender, e);
         }
     }
 }

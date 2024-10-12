@@ -49,5 +49,17 @@ namespace GUI
             OpenChildForm(new frmNhapKho());
             label1.Text = btnNhapSanPham.Text;
         }
+
+        private void btn_DanhMucSp_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmDanhMuc());
+            label1.Text=btn_DanhMucSp.Text;
+        }
+
+        private void btnChiTietSP_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmChiTietSanPham(""));
+            label1.Text=btnChiTietSP.Text;
+        }
     }
 }
