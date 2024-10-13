@@ -31,14 +31,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.panel_body = new System.Windows.Forms.Panel();
             this.panel_left = new System.Windows.Forms.Panel();
+            this.btnNhanVien = new System.Windows.Forms.Button();
+            this.btnKhachHang = new System.Windows.Forms.Button();
             this.btnChiTietSP = new System.Windows.Forms.Button();
             this.btn_DanhMucSp = new System.Windows.Forms.Button();
             this.btnNhapSanPham = new System.Windows.Forms.Button();
             this.btn_SanPham = new System.Windows.Forms.Button();
             this.pictureBox_logo = new System.Windows.Forms.PictureBox();
             this.panel_top = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnKhachHang = new System.Windows.Forms.Button();
             this.panel_left.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).BeginInit();
             this.panel_top.SuspendLayout();
@@ -50,12 +53,14 @@
             this.panel_body.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_body.Location = new System.Drawing.Point(143, 75);
             this.panel_body.Name = "panel_body";
-            this.panel_body.Size = new System.Drawing.Size(1278, 570);
+            this.panel_body.Size = new System.Drawing.Size(1278, 624);
             this.panel_body.TabIndex = 5;
+            this.panel_body.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_body_Paint);
             // 
             // panel_left
             // 
             this.panel_left.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel_left.Controls.Add(this.btnNhanVien);
             this.panel_left.Controls.Add(this.btnKhachHang);
             this.panel_left.Controls.Add(this.btnChiTietSP);
             this.panel_left.Controls.Add(this.btn_DanhMucSp);
@@ -64,8 +69,30 @@
             this.panel_left.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_left.Location = new System.Drawing.Point(0, 75);
             this.panel_left.Name = "panel_left";
-            this.panel_left.Size = new System.Drawing.Size(143, 570);
+            this.panel_left.Size = new System.Drawing.Size(143, 624);
             this.panel_left.TabIndex = 3;
+            // 
+            // btnNhanVien
+            // 
+            this.btnNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhanVien.Location = new System.Drawing.Point(0, 361);
+            this.btnNhanVien.Name = "btnNhanVien";
+            this.btnNhanVien.Size = new System.Drawing.Size(143, 74);
+            this.btnNhanVien.TabIndex = 6;
+            this.btnNhanVien.Text = "Nhân Viên";
+            this.btnNhanVien.UseVisualStyleBackColor = true;
+            this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click);
+            // 
+            // btnKhachHang
+            // 
+            this.btnKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKhachHang.Location = new System.Drawing.Point(0, 289);
+            this.btnKhachHang.Name = "btnKhachHang";
+            this.btnKhachHang.Size = new System.Drawing.Size(143, 74);
+            this.btnKhachHang.TabIndex = 5;
+            this.btnKhachHang.Text = "Khách Hàng";
+            this.btnKhachHang.UseVisualStyleBackColor = true;
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             // 
             // btnChiTietSP
             // 
@@ -124,6 +151,8 @@
             // panel_top
             // 
             this.panel_top.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel_top.Controls.Add(this.label3);
+            this.panel_top.Controls.Add(this.label2);
             this.panel_top.Controls.Add(this.label1);
             this.panel_top.Controls.Add(this.pictureBox_logo);
             this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
@@ -131,6 +160,24 @@
             this.panel_top.Name = "panel_top";
             this.panel_top.Size = new System.Drawing.Size(1421, 75);
             this.panel_top.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(1096, 47);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(102, 16);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Tên Nhân Viên :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(1096, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(97, 16);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Mã Nhân Viên :";
             // 
             // label1
             // 
@@ -142,22 +189,11 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Home";
             // 
-            // btnKhachHang
-            // 
-            this.btnKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKhachHang.Location = new System.Drawing.Point(0, 289);
-            this.btnKhachHang.Name = "btnKhachHang";
-            this.btnKhachHang.Size = new System.Drawing.Size(143, 74);
-            this.btnKhachHang.TabIndex = 5;
-            this.btnKhachHang.Text = "Khách Hàng";
-            this.btnKhachHang.UseVisualStyleBackColor = true;
-            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1421, 645);
+            this.ClientSize = new System.Drawing.Size(1421, 699);
             this.Controls.Add(this.panel_body);
             this.Controls.Add(this.panel_left);
             this.Controls.Add(this.panel_top);
@@ -184,6 +220,9 @@
         private System.Windows.Forms.Button btn_DanhMucSp;
         private System.Windows.Forms.Button btnChiTietSP;
         private System.Windows.Forms.Button btnKhachHang;
+        private System.Windows.Forms.Button btnNhanVien;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }
 
