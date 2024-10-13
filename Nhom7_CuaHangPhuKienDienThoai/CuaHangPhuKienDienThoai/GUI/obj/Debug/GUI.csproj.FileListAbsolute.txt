@@ -38,3 +38,4 @@ C:\Users\vuxec\OneDrive\Máy tính\DoAnDotNet\Nhom7_CuaHangPhuKienDienThoai\CuaH
 C:\Users\vuxec\OneDrive\Máy tính\DoAnDotNet\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.pdb
 C:\Users\vuxec\OneDrive\Máy tính\DoAnDotNet\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.frmDanhMuc.resources
 C:\Users\vuxec\OneDrive\Máy tính\DoAnDotNet\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.frmChiTietSanPham.resources
+C:\Users\vuxec\OneDrive\Máy tính\DoAnDotNet\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.frmKhachHang.resources

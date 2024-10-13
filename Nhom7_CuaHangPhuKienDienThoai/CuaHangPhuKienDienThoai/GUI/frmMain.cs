@@ -61,5 +61,11 @@ namespace GUI
             OpenChildForm(new frmChiTietSanPham(""));
             label1.Text=btnChiTietSP.Text;
         }
+
+        private void btnKhachHang_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmKhachHang());
+            label1.Text= btnKhachHang.Text;
+        }
     }
 }

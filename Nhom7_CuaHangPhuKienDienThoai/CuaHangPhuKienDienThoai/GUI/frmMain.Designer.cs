@@ -31,13 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.panel_body = new System.Windows.Forms.Panel();
             this.panel_left = new System.Windows.Forms.Panel();
+            this.btnChiTietSP = new System.Windows.Forms.Button();
             this.btn_DanhMucSp = new System.Windows.Forms.Button();
             this.btnNhapSanPham = new System.Windows.Forms.Button();
             this.btn_SanPham = new System.Windows.Forms.Button();
             this.pictureBox_logo = new System.Windows.Forms.PictureBox();
             this.panel_top = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnChiTietSP = new System.Windows.Forms.Button();
+            this.btnKhachHang = new System.Windows.Forms.Button();
             this.panel_left.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).BeginInit();
             this.panel_top.SuspendLayout();
@@ -55,6 +56,7 @@
             // panel_left
             // 
             this.panel_left.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel_left.Controls.Add(this.btnKhachHang);
             this.panel_left.Controls.Add(this.btnChiTietSP);
             this.panel_left.Controls.Add(this.btn_DanhMucSp);
             this.panel_left.Controls.Add(this.btnNhapSanPham);
@@ -64,6 +66,17 @@
             this.panel_left.Name = "panel_left";
             this.panel_left.Size = new System.Drawing.Size(143, 570);
             this.panel_left.TabIndex = 3;
+            // 
+            // btnChiTietSP
+            // 
+            this.btnChiTietSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChiTietSP.Location = new System.Drawing.Point(0, 217);
+            this.btnChiTietSP.Name = "btnChiTietSP";
+            this.btnChiTietSP.Size = new System.Drawing.Size(143, 74);
+            this.btnChiTietSP.TabIndex = 4;
+            this.btnChiTietSP.Text = "Chi Tiết Sản Phẩm";
+            this.btnChiTietSP.UseVisualStyleBackColor = true;
+            this.btnChiTietSP.Click += new System.EventHandler(this.btnChiTietSP_Click);
             // 
             // btn_DanhMucSp
             // 
@@ -129,16 +142,16 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Home";
             // 
-            // btnChiTietSP
+            // btnKhachHang
             // 
-            this.btnChiTietSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChiTietSP.Location = new System.Drawing.Point(0, 217);
-            this.btnChiTietSP.Name = "btnChiTietSP";
-            this.btnChiTietSP.Size = new System.Drawing.Size(143, 74);
-            this.btnChiTietSP.TabIndex = 4;
-            this.btnChiTietSP.Text = "Chi Tiết Sản Phẩm";
-            this.btnChiTietSP.UseVisualStyleBackColor = true;
-            this.btnChiTietSP.Click += new System.EventHandler(this.btnChiTietSP_Click);
+            this.btnKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKhachHang.Location = new System.Drawing.Point(0, 289);
+            this.btnKhachHang.Name = "btnKhachHang";
+            this.btnKhachHang.Size = new System.Drawing.Size(143, 74);
+            this.btnKhachHang.TabIndex = 5;
+            this.btnKhachHang.Text = "Khách Hàng";
+            this.btnKhachHang.UseVisualStyleBackColor = true;
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             // 
             // frmMain
             // 
@@ -170,6 +183,7 @@
         private System.Windows.Forms.Button btnNhapSanPham;
         private System.Windows.Forms.Button btn_DanhMucSp;
         private System.Windows.Forms.Button btnChiTietSP;
+        private System.Windows.Forms.Button btnKhachHang;
     }
 }
 

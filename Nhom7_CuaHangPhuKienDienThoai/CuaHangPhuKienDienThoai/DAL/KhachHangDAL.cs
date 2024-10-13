@@ -70,5 +70,37 @@ namespace DAL
                 return false;
             }    
         }
+        public bool Xoa_KH(KhachHangDTO tmp)
+        {
+            string sql = "delete from KHACHANG where MAKH='"+tmp.MaKH+"'";
+            conn.Open();
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            int kt = (int)cmd.ExecuteNonQuery();
+            conn.Close();
+            if (kt > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool Sua_KH(KhachHangDTO tmp)
+        {
+            string sql = "update KHACHANG set TENKH='" + tmp.TenKH + "',EMAIL='" + tmp.Email + "',SDT='" + tmp.SDT + "',DIACHI='" + tmp.DChi + "' where MAKH='" + tmp.MaKH + "'";
+            conn.Open();
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            int kt = (int)cmd.ExecuteNonQuery();
+            conn.Close();
+            if (kt > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

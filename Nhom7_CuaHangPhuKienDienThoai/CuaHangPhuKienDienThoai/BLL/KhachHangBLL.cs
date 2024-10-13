@@ -48,5 +48,13 @@ namespace BLL
                 return true;
             return false;
         }
+        public bool xoa_KH(KhachHangDTO tmp)
+        {
+            return KhachHangDAL.Xoa_KH(tmp);
+        }
+        public bool sua_KH(KhachHangDTO tmp)
+        {
+            return KhachHangDAL.Sua_KH(tmp);
+        }
     }
 }
