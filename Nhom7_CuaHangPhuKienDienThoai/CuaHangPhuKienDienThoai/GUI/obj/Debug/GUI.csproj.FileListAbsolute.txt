@@ -41,3 +41,4 @@ C:\Users\vuxec\OneDrive\Máy tính\DoAnDotNet\Nhom7_CuaHangPhuKienDienThoai\CuaH
 C:\Users\vuxec\OneDrive\Máy tính\DoAnDotNet\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.frmKhachHang.resources
 C:\Users\vuxec\OneDrive\Máy tính\DoAnDotNet\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.frmNhanVien.resources
 C:\Users\vuxec\OneDrive\Máy tính\DoAnDotNet\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.frmDangNhap.resources
+C:\Users\vuxec\OneDrive\Máy tính\DoAnDotNet\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.frmDoiMatKhau.resources

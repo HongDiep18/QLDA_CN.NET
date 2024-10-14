@@ -42,20 +42,26 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.tàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel_body.SuspendLayout();
             this.panel_left.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).BeginInit();
             this.panel_top.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_body
             // 
             this.panel_body.BackColor = System.Drawing.Color.Transparent;
+            this.panel_body.Controls.Add(this.menuStrip1);
             this.panel_body.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_body.Location = new System.Drawing.Point(143, 75);
             this.panel_body.Name = "panel_body";
             this.panel_body.Size = new System.Drawing.Size(1278, 624);
             this.panel_body.TabIndex = 5;
-            this.panel_body.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_body_Paint);
             // 
             // panel_left
             // 
@@ -74,6 +80,7 @@
             // 
             // btnNhanVien
             // 
+            this.btnNhanVien.Enabled = false;
             this.btnNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhanVien.Location = new System.Drawing.Point(0, 361);
             this.btnNhanVien.Name = "btnNhanVien";
@@ -85,6 +92,7 @@
             // 
             // btnKhachHang
             // 
+            this.btnKhachHang.Enabled = false;
             this.btnKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKhachHang.Location = new System.Drawing.Point(0, 289);
             this.btnKhachHang.Name = "btnKhachHang";
@@ -96,6 +104,7 @@
             // 
             // btnChiTietSP
             // 
+            this.btnChiTietSP.Enabled = false;
             this.btnChiTietSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChiTietSP.Location = new System.Drawing.Point(0, 217);
             this.btnChiTietSP.Name = "btnChiTietSP";
@@ -107,6 +116,7 @@
             // 
             // btn_DanhMucSp
             // 
+            this.btn_DanhMucSp.Enabled = false;
             this.btn_DanhMucSp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DanhMucSp.Location = new System.Drawing.Point(0, 145);
             this.btn_DanhMucSp.Name = "btn_DanhMucSp";
@@ -118,6 +128,7 @@
             // 
             // btnNhapSanPham
             // 
+            this.btnNhapSanPham.Enabled = false;
             this.btnNhapSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhapSanPham.Location = new System.Drawing.Point(0, 73);
             this.btnNhapSanPham.Name = "btnNhapSanPham";
@@ -129,6 +140,7 @@
             // 
             // btn_SanPham
             // 
+            this.btn_SanPham.Enabled = false;
             this.btn_SanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_SanPham.Location = new System.Drawing.Point(0, 1);
             this.btn_SanPham.Name = "btn_SanPham";
@@ -189,6 +201,40 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Home";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tàiKhoảnToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1278, 28);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // tàiKhoảnToolStripMenuItem
+            // 
+            this.tàiKhoảnToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.đăngXuấtToolStripMenuItem,
+            this.đổiMậtKhẩuToolStripMenuItem});
+            this.tàiKhoảnToolStripMenuItem.Name = "tàiKhoảnToolStripMenuItem";
+            this.tàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
+            this.tàiKhoảnToolStripMenuItem.Text = "Tài Khoản";
+            // 
+            // đăngXuấtToolStripMenuItem
+            // 
+            this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.đăngXuấtToolStripMenuItem.Text = "Đăng Xuất";
+            this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
+            // 
+            // đổiMậtKhẩuToolStripMenuItem
+            // 
+            this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
+            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.đổiMậtKhẩuToolStripMenuItem.Text = "Đổi Mật Khẩu";
+            this.đổiMậtKhẩuToolStripMenuItem.Click += new System.EventHandler(this.đổiMậtKhẩuToolStripMenuItem_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -197,13 +243,18 @@
             this.Controls.Add(this.panel_body);
             this.Controls.Add(this.panel_left);
             this.Controls.Add(this.panel_top);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmMain_Load);
+            this.panel_body.ResumeLayout(false);
+            this.panel_body.PerformLayout();
             this.panel_left.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).EndInit();
             this.panel_top.ResumeLayout(false);
             this.panel_top.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -223,6 +274,10 @@
         private System.Windows.Forms.Button btnNhanVien;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem tàiKhoảnToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem đổiMậtKhẩuToolStripMenuItem;
     }
 }
 

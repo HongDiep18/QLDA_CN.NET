@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,7 +35,8 @@ namespace GUI
             childForm.BringToFront();
             childForm.Show();
         }
-       
+
+        NhanVienBLL nvBLL = new NhanVienBLL();
         private void btn_SanPham_Click(object sender, EventArgs e)
         {
             OpenChildForm(new frmSanPham());
@@ -44,6 +46,34 @@ namespace GUI
         {
             MaNV = ma;
             label2.Text += ma;
+            string PhanQuyen = nvBLL.get_Chuc_Vu(MaNV);
+            if(PhanQuyen.Trim() == "QL")
+            {
+                btn_SanPham.Enabled = true;
+                btnNhanVien.Enabled = true;
+                btnNhapSanPham.Enabled=true;
+                btn_DanhMucSp.Enabled = true;
+                btnChiTietSP.Enabled = true;
+                btnKhachHang.Enabled = true;
+            }    
+            else if(PhanQuyen.Trim()=="NVBH")
+            {
+                btn_SanPham.Enabled = true;
+               // btnNhanVien.Enabled = true;
+               // btnNhapSanPham.Enabled = true;
+                btn_DanhMucSp.Enabled = true;
+                btnChiTietSP.Enabled = true;
+                btnKhachHang.Enabled = true;
+            }
+            else
+            {
+               // btn_SanPham.Enabled = true;
+                //btnNhanVien.Enabled = true;
+                btnNhapSanPham.Enabled = true;
+                btn_DanhMucSp.Enabled = true;
+                btnChiTietSP.Enabled = true;
+                //btnKhachHang.Enabled = true;
+            }
         }
         public void loadTenNV(string ten)
         {
@@ -52,9 +82,30 @@ namespace GUI
         public void loadMatKhau(string ten)
         {
             MatKhau = ten;
+
+        }
+        public string Lay_Chuc_Vu(string ma)
+        {
+            NhanVienBLL nvBLL=new NhanVienBLL();
+            return nvBLL.get_Chuc_Vu(ma);
         }
         private void frmMain_Load(object sender, EventArgs e)
         {
+
+            btn_SanPham.Enabled = false;
+            btnNhanVien.Enabled = false;
+            btnNhapSanPham.Enabled = false;
+            btn_DanhMucSp.Enabled = false;
+            btnChiTietSP.Enabled = false;
+            btnKhachHang.Enabled = false;// gán btn chức năng bằng false khởi tạo
+
+
+            MatKhau =string.Empty;
+            MaNV=string.Empty;
+            label3.Text= "Tên Nhân Viên :";
+            label2.Text= "Mã Nhân Viên :";
+
+
             frmDangNhap DangNhap = new frmDangNhap();
             if (CurrentFormChild != null)
             {
@@ -72,6 +123,7 @@ namespace GUI
             DangNhap.truyenMATKHAU = new frmDangNhap.MATKHAU(loadMatKhau);
             DangNhap.Show();
 
+            
 
 
 
@@ -107,8 +159,14 @@ namespace GUI
             label1.Text=btnNhanVien.Text;
         }
 
-        private void panel_body_Paint(object sender, PaintEventArgs e)
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            frmMain_Load(sender, e);
+        }
+
+        private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmDoiMatKhau(MatKhau,MaNV));
 
         }
     }

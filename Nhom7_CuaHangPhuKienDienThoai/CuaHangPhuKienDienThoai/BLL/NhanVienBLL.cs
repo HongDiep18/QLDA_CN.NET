@@ -31,5 +31,13 @@ namespace BLL
         {
             return nvDAL.Sua_NV(nv);
         }
+        public string get_Chuc_Vu(string ma)
+        {
+            return nvDAL.Lay_Chuc_Vu(ma);
+        }
+        public bool Doi_MK(string mkm,string ma)
+        {
+            return nvDAL.Doi_MK(mkm, ma);
+        }
     }
 }

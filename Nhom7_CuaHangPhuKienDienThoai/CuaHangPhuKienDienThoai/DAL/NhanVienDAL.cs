@@ -86,5 +86,35 @@ namespace DAL
                 return false;
             }
         }
+        public string Lay_Chuc_Vu(string ma)
+        {
+            string mk=string.Empty;
+            string sql = "select CHUCVU from NHANVIEN where MANV='" + ma + "'";
+            conn.Open();
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            SqlDataReader rdr = cmd.ExecuteReader();
+            while (rdr.Read())
+            {
+                mk = rdr[0].ToString();
+            }
+            conn.Close();
+            return mk;
+        }
+        public bool Doi_MK(string mkm,string ma)
+        {
+            string sql = "update NHANVIEN set MATKHAU='"+mkm+"' where MANV='"+ma+"'";
+            conn.Open();
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            int kt = (int)cmd.ExecuteNonQuery();
+            conn.Close();
+            if (kt > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
