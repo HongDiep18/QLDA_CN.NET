@@ -59,6 +59,7 @@
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tab_thanhtoan = new System.Windows.Forms.TabPage();
+            this.btnThemKHmoi = new System.Windows.Forms.Button();
             this.txtTong2 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -101,7 +102,6 @@
             this.btn_thanhtoan1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.tab_Xem = new System.Windows.Forms.TabControl();
-            this.btnThemKHmoi = new System.Windows.Forms.Button();
             this.tabPage_themKHmoi.SuspendLayout();
             this.tab_MuaHang.SuspendLayout();
             this.tab_thanhtoan.SuspendLayout();
@@ -401,6 +401,16 @@
             this.tab_thanhtoan.TabIndex = 1;
             this.tab_thanhtoan.Text = "Thanh Toán";
             this.tab_thanhtoan.UseVisualStyleBackColor = true;
+            // 
+            // btnThemKHmoi
+            // 
+            this.btnThemKHmoi.Location = new System.Drawing.Point(1066, 235);
+            this.btnThemKHmoi.Name = "btnThemKHmoi";
+            this.btnThemKHmoi.Size = new System.Drawing.Size(61, 151);
+            this.btnThemKHmoi.TabIndex = 20;
+            this.btnThemKHmoi.Text = "Thêm Khách Mới";
+            this.btnThemKHmoi.UseVisualStyleBackColor = true;
+            this.btnThemKHmoi.Click += new System.EventHandler(this.btnThemKHmoi_Click);
             // 
             // txtTong2
             // 
@@ -779,16 +789,6 @@
             this.tab_Xem.SelectedIndex = 0;
             this.tab_Xem.Size = new System.Drawing.Size(1160, 553);
             this.tab_Xem.TabIndex = 1;
-            // 
-            // btnThemKHmoi
-            // 
-            this.btnThemKHmoi.Location = new System.Drawing.Point(1066, 235);
-            this.btnThemKHmoi.Name = "btnThemKHmoi";
-            this.btnThemKHmoi.Size = new System.Drawing.Size(61, 151);
-            this.btnThemKHmoi.TabIndex = 20;
-            this.btnThemKHmoi.Text = "Thêm Khách Mới";
-            this.btnThemKHmoi.UseVisualStyleBackColor = true;
-            this.btnThemKHmoi.Click += new System.EventHandler(this.btnThemKHmoi_Click);
             // 
             // frmSanPham
             // 

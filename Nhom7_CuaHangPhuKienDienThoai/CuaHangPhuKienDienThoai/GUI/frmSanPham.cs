@@ -232,5 +232,7 @@ namespace GUI
         {
             tab_Xem.SelectedTab = tabPage_themKHmoi;
         }
+
+       
     }
 }

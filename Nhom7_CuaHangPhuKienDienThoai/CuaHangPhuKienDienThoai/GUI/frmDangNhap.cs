@@ -66,6 +66,7 @@ namespace GUI
         private void frmDangNhap_Load(object sender, EventArgs e)
         {
             load_NV();
+      
         }
     }
 }

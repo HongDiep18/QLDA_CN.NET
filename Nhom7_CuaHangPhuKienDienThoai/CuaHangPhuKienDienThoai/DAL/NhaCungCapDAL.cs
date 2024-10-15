@@ -1,6 +1,7 @@
 ﻿using DTO;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -36,6 +37,73 @@ namespace DAL
             conn.Close();
             return ds_;
         }
-        
+        public bool ktTrung(string maNCC)
+        {
+            conn.Open();
+            string select = "select count(*) from NHACC where MANCC = '" + maNCC + "'";
+            SqlCommand cmd = new SqlCommand(select, conn);
+            int kq = (int)cmd.ExecuteScalar();
+            conn.Close();
+
+            return kq == 0;
+        }
+        public bool addValue(NhaCungCapDTO ncc)
+        {
+            //if (ktTrung(ncc.MaNCC) == false)
+            //{
+            //    return false;
+            //}
+            try
+            {
+                conn.Open();
+                string insert = "insert into NHACC values('" + ncc.MaNCC + "','" + ncc.TenNCC + "','" + ncc.DChiNCC + "','" + ncc.SDTNCC + "','" + ncc.EmailNCC + "')";
+                SqlCommand cmd = new SqlCommand(insert, conn);
+                int kq = cmd.ExecuteNonQuery();
+                return kq > 0;
+            }
+            finally
+            {
+                if (conn.State == ConnectionState.Open)
+                {
+                    conn.Close();
+                }
+            }
+        }
+        public bool deleteValue(string ma)
+        {
+            try
+            {
+                conn.Open();
+                string delete = "delete from NHACC where MANCC = '" + ma + "'";
+                SqlCommand cmd = new SqlCommand(delete, conn);
+                int kq = cmd.ExecuteNonQuery();
+                return kq > 0;
+            }
+            finally
+            {
+                if (conn.State == ConnectionState.Open)
+                {
+                    conn.Close();
+                }
+            }
+        }
+        public bool editValue(NhaCungCapDTO ncc)
+        {
+            try
+            {
+                conn.Open();
+                string edit = "update NHACC set TENNCC= '" + ncc.TenNCC + "', DIACHI ='" + ncc.DChiNCC + "',SDT= '" + ncc.SDTNCC + "', EMAIL = '" + ncc.EmailNCC + "'   where  MANCC = '" + ncc.MaNCC + "'";
+                SqlCommand cmd = new SqlCommand(edit, conn);
+                int kq = cmd.ExecuteNonQuery();
+                return kq > 0;
+            }
+            finally
+            {
+                if (conn.State == ConnectionState.Open)
+                {
+                    conn.Close();
+                }
+            }
+        }
     }
 }

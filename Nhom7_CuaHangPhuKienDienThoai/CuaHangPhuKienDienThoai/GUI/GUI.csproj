@@ -82,6 +82,12 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhaCungCap.Designer.cs">
+      <DependentUpon>frmNhaCungCap.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,12 @@
     </Compile>
     <Compile Include="frmSanPham.Designer.cs">
       <DependentUpon>frmSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongKe.Designer.cs">
+      <DependentUpon>frmThongKe.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -120,6 +132,9 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmNhaCungCap.resx">
+      <DependentUpon>frmNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSanPham.resx">
       <DependentUpon>frmSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongKe.resx">
+      <DependentUpon>frmThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -160,6 +178,29 @@
       <Project>{4f35c7b7-71aa-4cd1-abe0-c762be9bbaa2}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Imgs\SP001.jpg" />
+    <Content Include="Imgs\SP002.jpg" />
+    <Content Include="Imgs\SP003.jpg" />
+    <Content Include="Imgs\SP004.jpg" />
+    <Content Include="Imgs\SP005.jpg" />
+    <Content Include="Imgs\SP006.jpg" />
+    <Content Include="Imgs\SP007.jpg" />
+    <Content Include="Imgs\SP008.jpg" />
+    <Content Include="Imgs\SP009.jpg" />
+    <Content Include="Imgs\SP010.jpg" />
+    <Content Include="Imgs\SP011.jpg" />
+    <Content Include="Imgs\SP012.jpg" />
+    <Content Include="Imgs\SP013.jpg" />
+    <Content Include="Imgs\SP014.jpg" />
+    <Content Include="Imgs\SP015.jpg" />
+    <Content Include="Imgs\SP016.jpg" />
+    <Content Include="Imgs\SP017.jpg" />
+    <Content Include="Imgs\SP018.jpg" />
+    <Content Include="Imgs\SP019.jpg" />
+    <Content Include="Imgs\SP020.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

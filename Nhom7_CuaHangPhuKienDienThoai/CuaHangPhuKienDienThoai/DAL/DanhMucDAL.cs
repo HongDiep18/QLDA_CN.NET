@@ -34,16 +34,24 @@ namespace DAL
         }
         public bool insert_danhMuc(DanhMucDTO tmp)
         {
-            string sql = "insert into DANHMUC values('" + tmp.MaDM + "','" + tmp.TenDM + "')";
-            conn.Open();
-            SqlCommand cmd= new SqlCommand(sql, conn);
-            int kt=(int)cmd.ExecuteNonQuery();
-            conn.Close();
-            if(kt>0)
+            try
             {
-                return true;
+                string sql = "insert into DANHMUC values('" + tmp.MaDM.Trim() + "','" + tmp.TenDM.Trim() + "')";
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                int kt = (int)cmd.ExecuteNonQuery();
+                conn.Close();
+                if (kt > 0)
+                {
+                    return true;
+                }
+                else { return false; }
             }
-            else { return false; }
+            catch 
+            {
+                return false;
+            }   
+
         }
         public bool Sua_DANHMUC (string ma, string ten)
         {

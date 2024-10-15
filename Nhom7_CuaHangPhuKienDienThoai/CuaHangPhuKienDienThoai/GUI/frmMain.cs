@@ -55,6 +55,8 @@ namespace GUI
                 btn_DanhMucSp.Enabled = true;
                 btnChiTietSP.Enabled = true;
                 btnKhachHang.Enabled = true;
+                btnThongKe.Enabled = true;
+                btnNhaCungCap.Enabled = true;
             }    
             else if(PhanQuyen.Trim()=="NVBH")
             {
@@ -64,6 +66,7 @@ namespace GUI
                 btn_DanhMucSp.Enabled = true;
                 btnChiTietSP.Enabled = true;
                 btnKhachHang.Enabled = true;
+                btnNhaCungCap.Enabled = true;
             }
             else
             {
@@ -73,6 +76,8 @@ namespace GUI
                 btn_DanhMucSp.Enabled = true;
                 btnChiTietSP.Enabled = true;
                 //btnKhachHang.Enabled = true;
+                btnNhaCungCap.Enabled = true;
+
             }
         }
         public void loadTenNV(string ten)
@@ -168,6 +173,18 @@ namespace GUI
         {
             OpenChildForm(new frmDoiMatKhau(MatKhau,MaNV));
 
+        }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmThongKe());
+            label1.Text = btnThongKe.Text;
+        }
+
+        private void btnNhaCungCap_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmNhaCungCap());
+            label1.Text=btnNhaCungCap.Text;
         }
     }
 }
