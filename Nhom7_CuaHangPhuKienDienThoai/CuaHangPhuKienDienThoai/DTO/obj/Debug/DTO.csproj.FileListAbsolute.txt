@@ -4,6 +4,7 @@ C:\Users\vuxec\OneDrive\Máy tính\CuaHangPhuKienDienThoai\QLDA_CN.NET\Nhom7_Cua
 C:\Users\vuxec\OneDrive\Máy tính\CuaHangPhuKienDienThoai\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\vuxec\OneDrive\Máy tính\CuaHangPhuKienDienThoai\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\DTO\obj\Debug\DTO.dll
 C:\Users\vuxec\OneDrive\Máy tính\CuaHangPhuKienDienThoai\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\DTO\obj\Debug\DTO.pdb
+<<<<<<< HEAD
 C:\Users\vuxec\OneDrive\Máy tính\DoAnDotNet\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\DTO\bin\Debug\DTO.dll
 C:\Users\vuxec\OneDrive\Máy tính\DoAnDotNet\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\DTO\bin\Debug\DTO.pdb
 C:\Users\vuxec\OneDrive\Máy tính\DoAnDotNet\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
@@ -16,3 +17,11 @@ D:\tmp2\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\DTO\ob
 D:\tmp2\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\tmp2\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\DTO\obj\Debug\DTO.dll
 D:\tmp2\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\DTO\obj\Debug\DTO.pdb
+=======
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\DTO\bin\Debug\DTO.dll
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\DTO\bin\Debug\DTO.pdb
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\DTO\obj\Debug\DTO.dll
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\DTO\obj\Debug\DTO.pdb
+>>>>>>> 017fb19194f544d3fc2d51eebc6d44bf6340a58b

@@ -42,8 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChiTietHoaDonDAL.cs" />
+<<<<<<< HEAD
     <Compile Include="ChiTietPN_DAL.cs" />
     <Compile Include="DanhMucDAL.cs" />
+=======
+    <Compile Include="ChiTietSanPhamDAL.cs" />
+>>>>>>> 017fb19194f544d3fc2d51eebc6d44bf6340a58b
     <Compile Include="HoaDonDAL.cs" />
     <Compile Include="KhachHangDAL.cs" />
     <Compile Include="NhaCungCapDAL.cs" />

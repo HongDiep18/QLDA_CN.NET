@@ -10,7 +10,11 @@ namespace DAL
 {
     public class HoaDonDAL
     {
+<<<<<<< HEAD
         string conStr = "Data Source=HONGDIEP;Initial Catalog=Nhom7_CuaHangPhuKienDienThoai;User ID=sa;Password=123";
+=======
+        string conStr = "Data Source=HONGDIEP;Initial Catalog=DB_QL_PKDT;User ID=sa;Password=123";
+>>>>>>> 017fb19194f544d3fc2d51eebc6d44bf6340a58b
         SqlConnection conn;
         public HoaDonDAL()
         {

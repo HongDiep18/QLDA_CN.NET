@@ -42,6 +42,7 @@ namespace GUI
             OpenChildForm(new frmSanPham());
             label1.Text = btn_SanPham.Text;
         }
+<<<<<<< HEAD
         public void loadMaNV(string ma)
         {
             MaNV = ma;
@@ -177,5 +178,13 @@ namespace GUI
         }
 
 
+=======
+
+        private void btn_Detail_SP_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmDetailSP());
+            label1.Text = btn_SanPham.Text;
+        }
+>>>>>>> 017fb19194f544d3fc2d51eebc6d44bf6340a58b
     }
 }

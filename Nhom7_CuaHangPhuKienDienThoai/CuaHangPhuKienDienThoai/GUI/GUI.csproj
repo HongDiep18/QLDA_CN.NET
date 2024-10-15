@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="frmChiTietSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +76,13 @@
     </Compile>
     <Compile Include="frmKhachHang.Designer.cs">
       <DependentUpon>frmKhachHang.cs</DependentUpon>
+=======
+    <Compile Include="frmDetailSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetailSP.Designer.cs">
+      <DependentUpon>frmDetailSP.cs</DependentUpon>
+>>>>>>> 017fb19194f544d3fc2d51eebc6d44bf6340a58b
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -108,6 +116,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <EmbeddedResource Include="frmChiTietSanPham.resx">
       <DependentUpon>frmChiTietSanPham.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,6 +131,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmKhachHang.resx">
       <DependentUpon>frmKhachHang.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="frmDetailSP.resx">
+      <DependentUpon>frmDetailSP.cs</DependentUpon>
+>>>>>>> 017fb19194f544d3fc2d51eebc6d44bf6340a58b
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

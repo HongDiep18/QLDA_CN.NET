@@ -9,6 +9,7 @@ C:\Users\vuxec\OneDrive\Máy tính\CuaHangPhuKienDienThoai\QLDA_CN.NET\Nhom7_Cua
 C:\Users\vuxec\OneDrive\Máy tính\CuaHangPhuKienDienThoai\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\vuxec\OneDrive\Máy tính\CuaHangPhuKienDienThoai\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\BLL\obj\Debug\BLL.dll
 C:\Users\vuxec\OneDrive\Máy tính\CuaHangPhuKienDienThoai\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\BLL\obj\Debug\BLL.pdb
+<<<<<<< HEAD
 C:\Users\vuxec\OneDrive\Máy tính\DoAnDotNet\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\BLL\bin\Debug\BLL.dll
 C:\Users\vuxec\OneDrive\Máy tính\DoAnDotNet\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\BLL\bin\Debug\BLL.pdb
 C:\Users\vuxec\OneDrive\Máy tính\DoAnDotNet\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\BLL\bin\Debug\DAL.dll
@@ -31,3 +32,16 @@ D:\tmp2\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\BLL\ob
 D:\tmp2\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\BLL\obj\Debug\BLL.csproj.Up2Date
 D:\tmp2\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\BLL\obj\Debug\BLL.dll
 D:\tmp2\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\BLL\obj\Debug\BLL.pdb
+=======
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\BLL\bin\Debug\BLL.dll
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\BLL\bin\Debug\BLL.pdb
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\BLL\bin\Debug\DAL.dll
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\BLL\bin\Debug\DTO.dll
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\BLL\bin\Debug\DAL.pdb
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\BLL\bin\Debug\DTO.pdb
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\BLL\obj\Debug\BLL.csproj.Up2Date
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\BLL\obj\Debug\BLL.dll
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\BLL\obj\Debug\BLL.pdb
+>>>>>>> 017fb19194f544d3fc2d51eebc6d44bf6340a58b

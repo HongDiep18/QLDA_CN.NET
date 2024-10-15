@@ -16,6 +16,7 @@ C:\Users\vuxec\OneDrive\Máy tính\CuaHangPhuKienDienThoai\QLDA_CN.NET\Nhom7_Cua
 C:\Users\vuxec\OneDrive\Máy tính\CuaHangPhuKienDienThoai\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\vuxec\OneDrive\Máy tính\CuaHangPhuKienDienThoai\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.exe
 C:\Users\vuxec\OneDrive\Máy tính\CuaHangPhuKienDienThoai\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.pdb
+<<<<<<< HEAD
 C:\Users\vuxec\OneDrive\Máy tính\CuaHangPhuKienDienThoai\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.frmNhapKho.resources
 C:\Users\vuxec\OneDrive\Máy tính\DoAnDotNet\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\bin\Debug\GUI.exe.config
 C:\Users\vuxec\OneDrive\Máy tính\DoAnDotNet\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\bin\Debug\GUI.exe
@@ -68,3 +69,24 @@ D:\tmp2\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\ob
 D:\tmp2\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.exe
 D:\tmp2\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.pdb
 D:\tmp2\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.frmNhaCungCap.resources
+=======
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.frmDetailSP.resources
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.frmMain.resources
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.frmSanPham.resources
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.Properties.Resources.resources
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\bin\Debug\GUI.exe.config
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\bin\Debug\GUI.exe
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\bin\Debug\GUI.pdb
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\bin\Debug\BLL.dll
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\bin\Debug\DTO.dll
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\bin\Debug\DAL.dll
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\bin\Debug\BLL.pdb
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\bin\Debug\DTO.pdb
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\bin\Debug\DAL.pdb
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.csproj.Up2Date
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.exe
+D:\tmp\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\obj\Debug\GUI.pdb
+>>>>>>> 017fb19194f544d3fc2d51eebc6d44bf6340a58b

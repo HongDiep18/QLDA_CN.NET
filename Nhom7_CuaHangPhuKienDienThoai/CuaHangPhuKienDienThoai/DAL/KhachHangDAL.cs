@@ -10,7 +10,11 @@ namespace DAL
 {
     public class KhachHangDAL
     {
+<<<<<<< HEAD
         string conStr = "Data Source=HONGDIEP;Initial Catalog=Nhom7_CuaHangPhuKienDienThoai;User ID=sa;Password=123";
+=======
+        string conStr = "Data Source=HONGDIEP;Initial Catalog=DB_QL_PKDT;User ID=sa;Password=123";
+>>>>>>> 017fb19194f544d3fc2d51eebc6d44bf6340a58b
         SqlConnection conn;
         public KhachHangDAL()
         {
@@ -31,8 +35,8 @@ namespace DAL
                 string email = dr[2].ToString();
                 string sdt = dr[3].ToString();
                 string dchi = dr[4].ToString();
-               
-                KhachHangDTO tmp = new KhachHangDTO(ma, ten, email, sdt, dchi);
+                string passw = dr[5].ToString();
+                KhachHangDTO tmp = new KhachHangDTO(ma, ten, email, sdt, dchi, passw);
                 ds.Add(tmp);
             }
             conn.Close();

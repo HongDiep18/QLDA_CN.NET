@@ -35,11 +35,15 @@
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel_left = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
             this.btnNhanVien = new System.Windows.Forms.Button();
             this.btnKhachHang = new System.Windows.Forms.Button();
             this.btnChiTietSP = new System.Windows.Forms.Button();
             this.btn_DanhMucSp = new System.Windows.Forms.Button();
             this.btnNhapSanPham = new System.Windows.Forms.Button();
+=======
+            this.btn_Detail_SP = new System.Windows.Forms.Button();
+>>>>>>> 017fb19194f544d3fc2d51eebc6d44bf6340a58b
             this.btn_SanPham = new System.Windows.Forms.Button();
             this.pictureBox_logo = new System.Windows.Forms.PictureBox();
             this.panel_top = new System.Windows.Forms.Panel();
@@ -59,9 +63,15 @@
             this.panel_body.BackColor = System.Drawing.Color.Transparent;
             this.panel_body.Controls.Add(this.menuStrip1);
             this.panel_body.Dock = System.Windows.Forms.DockStyle.Fill;
+<<<<<<< HEAD
             this.panel_body.Location = new System.Drawing.Point(158, 75);
             this.panel_body.Name = "panel_body";
             this.panel_body.Size = new System.Drawing.Size(1263, 624);
+=======
+            this.panel_body.Location = new System.Drawing.Point(143, 84);
+            this.panel_body.Name = "panel_body";
+            this.panel_body.Size = new System.Drawing.Size(1278, 561);
+>>>>>>> 017fb19194f544d3fc2d51eebc6d44bf6340a58b
             this.panel_body.TabIndex = 5;
             // 
             // menuStrip1
@@ -101,16 +111,21 @@
             // panel_left
             // 
             this.panel_left.BackColor = System.Drawing.SystemColors.ActiveCaption;
+<<<<<<< HEAD
             this.panel_left.Controls.Add(this.btnQlCC);
             this.panel_left.Controls.Add(this.btnNhanVien);
             this.panel_left.Controls.Add(this.btnKhachHang);
             this.panel_left.Controls.Add(this.btnChiTietSP);
             this.panel_left.Controls.Add(this.btn_DanhMucSp);
             this.panel_left.Controls.Add(this.btnNhapSanPham);
+=======
+            this.panel_left.Controls.Add(this.btn_Detail_SP);
+>>>>>>> 017fb19194f544d3fc2d51eebc6d44bf6340a58b
             this.panel_left.Controls.Add(this.btn_SanPham);
             this.panel_left.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel_left.Location = new System.Drawing.Point(0, 75);
+            this.panel_left.Location = new System.Drawing.Point(0, 84);
             this.panel_left.Name = "panel_left";
+<<<<<<< HEAD
             this.panel_left.Size = new System.Drawing.Size(158, 624);
             this.panel_left.TabIndex = 3;
             // 
@@ -173,6 +188,21 @@
             this.btnNhapSanPham.Text = "Nhập Sản Phẩm";
             this.btnNhapSanPham.UseVisualStyleBackColor = true;
             this.btnNhapSanPham.Click += new System.EventHandler(this.btnNhapSanPham_Click);
+=======
+            this.panel_left.Size = new System.Drawing.Size(143, 561);
+            this.panel_left.TabIndex = 3;
+            // 
+            // btn_Detail_SP
+            // 
+            this.btn_Detail_SP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btn_Detail_SP.Location = new System.Drawing.Point(0, 80);
+            this.btn_Detail_SP.Name = "btn_Detail_SP";
+            this.btn_Detail_SP.Size = new System.Drawing.Size(143, 74);
+            this.btn_Detail_SP.TabIndex = 2;
+            this.btn_Detail_SP.Text = "Chi Tiết Sản Phẩm";
+            this.btn_Detail_SP.UseVisualStyleBackColor = true;
+            this.btn_Detail_SP.Click += new System.EventHandler(this.btn_Detail_SP_Click);
+>>>>>>> 017fb19194f544d3fc2d51eebc6d44bf6340a58b
             // 
             // btn_SanPham
             // 
@@ -206,7 +236,7 @@
             this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_top.Location = new System.Drawing.Point(0, 0);
             this.panel_top.Name = "panel_top";
-            this.panel_top.Size = new System.Drawing.Size(1421, 75);
+            this.panel_top.Size = new System.Drawing.Size(1421, 84);
             this.panel_top.TabIndex = 4;
             // 
             // label3
@@ -233,7 +263,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.label1.Location = new System.Drawing.Point(203, 18);
+=======
+            this.label1.Location = new System.Drawing.Point(228, 19);
+>>>>>>> 017fb19194f544d3fc2d51eebc6d44bf6340a58b
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 35);
             this.label1.TabIndex = 0;
@@ -282,6 +316,7 @@
         private System.Windows.Forms.PictureBox pictureBox_logo;
         private System.Windows.Forms.Panel panel_top;
         private System.Windows.Forms.Label label1;
+<<<<<<< HEAD
         private System.Windows.Forms.Button btnNhapSanPham;
         private System.Windows.Forms.Button btn_DanhMucSp;
         private System.Windows.Forms.Button btnChiTietSP;
@@ -294,6 +329,9 @@
         private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem đổiMậtKhẩuToolStripMenuItem;
         private System.Windows.Forms.Button btnQlCC;
+=======
+        private System.Windows.Forms.Button btn_Detail_SP;
+>>>>>>> 017fb19194f544d3fc2d51eebc6d44bf6340a58b
     }
 }
 
