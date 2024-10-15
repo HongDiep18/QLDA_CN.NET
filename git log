@@ -1,0 +1,138 @@
+[33mcommit e2fd02babc1dc70864c3dd12d83bf3e6b492956c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmainD[m[33m, [m[1;31morigin/mainD[m[33m)[m
+Merge: 4c220f8 017fb19
+Author: HongDiep18 <diep30314@gmail.com>
+Date:   Tue Oct 15 17:32:57 2024 +0700
+
+    add vendor management
+
+[33mcommit 4c220f8a2a8f6089c065e8205dbf9bbd0488125e[m
+Author: HongDiep18 <diep30314@gmail.com>
+Date:   Tue Oct 15 17:30:50 2024 +0700
+
+    add vendor management
+
+[33mcommit 46dd96420690af61a3f7af3cde7f3c3676148717[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: vuxeco113 <vuxeco113@gmail.com>
+Date:   Mon Oct 14 17:04:16 2024 +0700
+
+    Đổi mật khẩu, đăng xuất
+
+[33mcommit 4685b044959d243dfa3e82999b53a23d93d9505f[m
+Author: ThaiQ211 <dangquocthai214@gmail.com>
+Date:   Mon Oct 14 10:41:13 2024 +0700
+
+    Add files via upload
+
+[33mcommit c3bcd99c03ac42c76c6172cd4731292857f4aafc[m
+Author: vuxeco113 <vuxeco113@gmail.com>
+Date:   Sun Oct 13 22:43:03 2024 +0700
+
+    xong đăng nhập, quản lý nhân viên
+
+[33mcommit a169ea7066eec173f5a133b0a1823edb9d4e4b63[m
+Author: vuxeco113 <vuxeco113@gmail.com>
+Date:   Sun Oct 13 20:29:34 2024 +0700
+
+    frm Khach hàng
+
+[33mcommit 7b480953e59f0eb93a3a8423f320c915d3988cc7[m
+Author: vuxeco113 <vuxeco113@gmail.com>
+Date:   Sat Oct 12 21:38:56 2024 +0700
+
+    chi tiet sp, danh muc
+
+[33mcommit 833c759e78d27ff88575ffbc0797e0de6e9c94a4[m
+Author: vuxeco113 <vuxeco113@gmail.com>
+Date:   Sat Oct 12 21:34:38 2024 +0700
+
+    frmChiTietDanh Muc, frmChiTietSp
+
+[33mcommit f992524733bb8b05a4b8d63c081d2ac2e10f2ab5[m
+Author: vuxeco113 <vuxeco113@gmail.com>
+Date:   Sat Oct 12 21:16:53 2024 +0700
+
+    Chi tiet danh muc, chi tiet san pham
+
+[33mcommit 017fb19194f544d3fc2d51eebc6d44bf6340a58b[m
+Author: HongDiep18 <diep30314@gmail.com>
+Date:   Sat Oct 12 11:53:33 2024 +0700
+
+    UPDATE ADD DELETE EDI
+
+[33mcommit 7b2358b17a230ed7a71decdb7a0c9175c3bdc0fd[m
+Author: vuxeco113 <vuxeco113@gmail.com>
+Date:   Fri Oct 11 21:16:52 2024 +0700
+
+    test
+
+[33mcommit 5052440da8ea1d35bd905a01d5d3cb90b5944814[m
+Author: HongDiep18 <diep30314@gmail.com>
+Date:   Fri Oct 11 21:01:32 2024 +0700
+
+    Detail Product: Add
+
+[33mcommit b54cc9783aa79730268b7e2c86990a2c003c194d[m
+Author: vuxeco113 <vuxeco113@gmail.com>
+Date:   Thu Oct 10 23:03:12 2024 +0700
+
+    Xong nhập sản phẩm có sẵn
+
+[33mcommit 3589609004e38568acc13ce75b56226f55837355[m
+Author: vuxeco113 <vuxeco113@gmail.com>
+Date:   Thu Oct 10 16:32:42 2024 +0700
+
+    data base
+
+[33mcommit 33276bcb4dce9085df850a0d448d9b8c4510e771[m
+Author: vuxeco113 <vuxeco113@gmail.com>
+Date:   Mon Oct 7 19:13:47 2024 +0700
+
+    Xong phan ban hang, da insert hoadon
+
+[33mcommit a2ab17d54ecea877797ac5d10b67ed8487893ab6[m
+Author: ThaiQ211 <dangquocthai214@gmail.com>
+Date:   Sat Oct 5 16:48:22 2024 +0700
+
+    Add files via upload
+
+[33mcommit 4edf18e3b348bda62b5b086b25b0583b4ff7a5c9[m
+Author: vuxeco113 <vuxeco113@gmail.com>
+Date:   Fri Oct 4 20:02:00 2024 +0700
+
+    Mua Hàng Thanh Toán
+
+[33mcommit 23281fbedce01a7e63f2ba91461fc0260e54fb85[m
+Author: vuxeco113 <vuxeco113@gmail.com>
+Date:   Thu Oct 3 21:41:32 2024 +0700
+
+    Danh SACh SAn pham
+
+[33mcommit ff2eaed7a75fcf6d97945e8a314f1a094b7e2be4[m
+Author: vuxeco113 <vuxeco113@gmail.com>
+Date:   Tue Oct 1 19:52:52 2024 +0700
+
+    frmDanhMuc
+
+[33mcommit 667702ea24cb56c010deb2fe579ce4dbd8c0c67a[m
+Author: vuxeco113 <vuxeco113@gmail.com>
+Date:   Tue Oct 1 17:30:22 2024 +0700
+
+    tạo file
+
+[33mcommit 94281281a2dcf028a452f23110c25407677e170a[m
+Author: vuxeco113 <vuxeco113@gmail.com>
+Date:   Tue Oct 1 17:10:59 2024 +0700
+
+    test 2
+
+[33mcommit 2e034f6d07f117a1b8c5cd7e1f4147fc82161213[m
+Author: vuxeco113 <vuxeco113@gmail.com>
+Date:   Tue Oct 1 17:05:10 2024 +0700
+
+    test
+
+[33mcommit ad79c8fbfa72ea1bf7d9c26a41e1bda62d3c2ddc[m
+Author: vuxeco113 <vuxeco113@gmail.com>
+Date:   Thu Sep 26 23:20:28 2024 +0700
+
+    first commet
