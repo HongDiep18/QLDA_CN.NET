@@ -54,14 +54,11 @@ namespace GUI
             NhanVienDTO tmp = new NhanVienDTO(txtManv.Text, txtTennv.Text, txtCV.Text, txtSDt.Text, txtEM.Text,float.Parse(txtLuong.Text), txtMatKhau.Text);
             if (nvBLL.Them_NV(tmp))
             {
-                
-                    MessageBox.Show("Thêm thành coong");
-              
-                   
+                    MessageBox.Show("Thêm Thành Công");
             }
             else
             {
-                MessageBox.Show("Thêm Thất bại");
+                MessageBox.Show("Thêm Thất Bại");
             }
         }
 
@@ -71,13 +68,11 @@ namespace GUI
             if (nvBLL.Xoa_NV(tmp))
             {
 
-                MessageBox.Show("Xóa thành Công");
-
-
+                MessageBox.Show("Xóa Thành Công");
             }
             else
             {
-                MessageBox.Show("Xóa Thất bại");
+                MessageBox.Show("Xóa Thất Bại");
             }
         }
 
@@ -86,11 +81,11 @@ namespace GUI
             NhanVienDTO tmp = new NhanVienDTO(txtManv.Text,txtTennv.Text,txtCV.Text,txtSDt.Text,txtEM.Text,float.Parse(txtLuong.Text),txtMatKhau.Text);
             if (nvBLL.Sua_NV(tmp))
             {
-                MessageBox.Show("Sửa thành công");
+                MessageBox.Show("Sửa Thành Công");
             }
             else
             {
-                MessageBox.Show("Sửa thất bại");
+                MessageBox.Show("Sửa Thất Bại");
             }
         }
 

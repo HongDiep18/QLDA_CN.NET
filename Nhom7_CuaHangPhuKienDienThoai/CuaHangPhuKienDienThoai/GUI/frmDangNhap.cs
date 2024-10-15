@@ -37,7 +37,7 @@ namespace GUI
         {
             foreach (NhanVienDTO d in ds)
             {
-                if(d.MaNV.Trim()==txtManv.Text && d.Password.Trim()==txtMK.Text)
+                if(d.MaNV.Trim()==txtManv.Text.Trim() && d.Password.Trim()==txtMK.Text.Trim())
                 {
                     //MaNV = d.MaNV;
                     //TenNV = d.TenNV;
@@ -54,13 +54,13 @@ namespace GUI
                     {
                         truyenMATKHAU(txtMK.Text);
                     }
-                    MessageBox.Show("Đang Nhập Thành Công ");
+                    MessageBox.Show("Đăng Nhập Thành Công ");
                     /*this.DialogResult = DialogResult.OK;*/ // Đặt DialogResult
                     this.Close(); // Đóng form con
                     return;
                 }    
             }    
-            MessageBox.Show("Đang Nhập Thất Bại ");
+            MessageBox.Show("Đăng Nhập Thất Bại ");
         }
 
         private void frmDangNhap_Load(object sender, EventArgs e)

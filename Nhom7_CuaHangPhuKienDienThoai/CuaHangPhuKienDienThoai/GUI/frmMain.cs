@@ -47,27 +47,27 @@ namespace GUI
             MaNV = ma;
             label2.Text += ma;
             string PhanQuyen = nvBLL.get_Chuc_Vu(MaNV);
-            if(PhanQuyen.Trim() == "QL")
+            if (PhanQuyen.Trim() == "QL")
             {
                 btn_SanPham.Enabled = true;
                 btnNhanVien.Enabled = true;
-                btnNhapSanPham.Enabled=true;
+                btnNhapSanPham.Enabled = true;
                 btn_DanhMucSp.Enabled = true;
                 btnChiTietSP.Enabled = true;
                 btnKhachHang.Enabled = true;
-            }    
-            else if(PhanQuyen.Trim()=="NVBH")
+            }
+            else if (PhanQuyen.Trim() == "NVBH")
             {
                 btn_SanPham.Enabled = true;
-               // btnNhanVien.Enabled = true;
-               // btnNhapSanPham.Enabled = true;
+                // btnNhanVien.Enabled = true;
+                // btnNhapSanPham.Enabled = true;
                 btn_DanhMucSp.Enabled = true;
                 btnChiTietSP.Enabled = true;
                 btnKhachHang.Enabled = true;
             }
             else
             {
-               // btn_SanPham.Enabled = true;
+                // btn_SanPham.Enabled = true;
                 //btnNhanVien.Enabled = true;
                 btnNhapSanPham.Enabled = true;
                 btn_DanhMucSp.Enabled = true;
@@ -86,7 +86,7 @@ namespace GUI
         }
         public string Lay_Chuc_Vu(string ma)
         {
-            NhanVienBLL nvBLL=new NhanVienBLL();
+            NhanVienBLL nvBLL = new NhanVienBLL();
             return nvBLL.get_Chuc_Vu(ma);
         }
         private void frmMain_Load(object sender, EventArgs e)
@@ -100,10 +100,10 @@ namespace GUI
             btnKhachHang.Enabled = false;// gán btn chức năng bằng false khởi tạo
 
 
-            MatKhau =string.Empty;
-            MaNV=string.Empty;
-            label3.Text= "Tên Nhân Viên :";
-            label2.Text= "Mã Nhân Viên :";
+            MatKhau = string.Empty;
+            MaNV = string.Empty;
+            label3.Text = "Tên Nhân Viên :";
+            label2.Text = "Mã Nhân Viên :";
 
 
             frmDangNhap DangNhap = new frmDangNhap();
@@ -123,7 +123,7 @@ namespace GUI
             DangNhap.truyenMATKHAU = new frmDangNhap.MATKHAU(loadMatKhau);
             DangNhap.Show();
 
-            
+
 
 
 
@@ -138,25 +138,31 @@ namespace GUI
         private void btn_DanhMucSp_Click(object sender, EventArgs e)
         {
             OpenChildForm(new frmDanhMuc());
-            label1.Text=btn_DanhMucSp.Text;
+            label1.Text = btn_DanhMucSp.Text;
         }
 
         private void btnChiTietSP_Click(object sender, EventArgs e)
         {
             OpenChildForm(new frmChiTietSanPham(""));
-            label1.Text=btnChiTietSP.Text;
+            label1.Text = btnChiTietSP.Text;
         }
 
         private void btnKhachHang_Click(object sender, EventArgs e)
         {
             OpenChildForm(new frmKhachHang());
-            label1.Text= btnKhachHang.Text;
+            label1.Text = btnKhachHang.Text;
         }
 
         private void btnNhanVien_Click(object sender, EventArgs e)
         {
             OpenChildForm(new frmNhanVien());
-            label1.Text=btnNhanVien.Text;
+            label1.Text = btnNhanVien.Text;
+        }
+
+        private void btnQlCC_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmNhaCungCap());
+            label1.Text = btnQlCC.Text;
         }
 
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
@@ -166,8 +172,10 @@ namespace GUI
 
         private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new frmDoiMatKhau(MatKhau,MaNV));
+            OpenChildForm(new frmDoiMatKhau(MatKhau, MaNV));
 
         }
+
+
     }
 }

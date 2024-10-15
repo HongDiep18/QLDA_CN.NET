@@ -60,6 +60,7 @@
             this.txtManv.Name = "txtManv";
             this.txtManv.Size = new System.Drawing.Size(298, 22);
             this.txtManv.TabIndex = 2;
+            this.txtManv.Text = "NV002";
             // 
             // txtMK
             // 
@@ -67,6 +68,7 @@
             this.txtMK.Name = "txtMK";
             this.txtMK.Size = new System.Drawing.Size(298, 22);
             this.txtMK.TabIndex = 3;
+            this.txtMK.Text = "123";
             // 
             // btnDangNhap
             // 

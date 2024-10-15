@@ -31,15 +31,15 @@ namespace GUI
         private void btnDoiMK_Click(object sender, EventArgs e)
         {
             NhanVienBLL nvBLL = new NhanVienBLL();
-            if(txtMKC.Text==MKC && txtMKM1.Text==txtMKM2.Text)
+            if(txtMKC.Text.Trim()==MKC && txtMKM1.Text.Trim()==txtMKM2.Text)
             {
                 if(nvBLL.Doi_MK(txtMKM1.Text,MaNV))
                 {
-                    MessageBox.Show("Đổi MẬt Khẩu Thành Công");
+                    MessageBox.Show("Đổi Mật Khẩu Thành Công");
                 }
                 else
                 {
-                    MessageBox.Show("Đổi MẬt Khẩu Thất Bại");
+                    MessageBox.Show("Đổi Mật Khẩu Thất Bại");
                 }
             }
             else

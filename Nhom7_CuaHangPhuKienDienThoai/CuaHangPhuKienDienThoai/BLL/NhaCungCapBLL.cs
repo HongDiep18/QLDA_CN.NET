@@ -21,5 +21,17 @@ namespace BLL
         {
             return nccDAL.get_ds_NCC();
         }
+        public bool addValue(NhaCungCapDTO ncc)
+        {
+            return nccDAL.addValue(ncc);
+        }
+        public bool editValue(NhaCungCapDTO ncc)
+        {
+            return nccDAL.editValue(ncc);
+        }
+        public bool deleteValue(string ma)
+        {
+            return nccDAL.deleteValue(ma);
+        }
     }
 }

@@ -10,7 +10,7 @@ namespace DAL
 {
     public class DanhMucDAL
     {
-        string conStr = "Data Source=DESKTOP-JARJMT7\\SA;Initial Catalog=Nhom7_CuaHangPhuKienDienThoai;User ID=sa;Password=123";
+        string conStr = "Data Source=HONGDIEP;Initial Catalog=Nhom7_CuaHangPhuKienDienThoai;User ID=sa;Password=123";
         SqlConnection conn;
         public DanhMucDAL()
         {
@@ -34,16 +34,23 @@ namespace DAL
         }
         public bool insert_danhMuc(DanhMucDTO tmp)
         {
-            string sql = "insert into DANHMUC values('" + tmp.MaDM + "','" + tmp.TenDM + "')";
-            conn.Open();
-            SqlCommand cmd= new SqlCommand(sql, conn);
-            int kt=(int)cmd.ExecuteNonQuery();
-            conn.Close();
-            if(kt>0)
+            try
             {
-                return true;
+                string sql = "insert into DANHMUC values('" + tmp.MaDM + "',N'" + tmp.TenDM + "')";
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                int kt = (int)cmd.ExecuteNonQuery();
+                conn.Close();
+                if (kt > 0)
+                {
+                    return true;
+                }
+                else { return false; }
             }
-            else { return false; }
+            catch
+            {
+                return false;
+            }
         }
         public bool Sua_DANHMUC (string ma, string ten)
         {
