@@ -56,7 +56,7 @@ namespace DAL
             try
             {
                 conn.Open();
-                string insert = "insert into NHACC values('" + ncc.MaNCC + "','" + ncc.TenNCC + "','" + ncc.DChiNCC + "','" + ncc.SDTNCC + "','" + ncc.EmailNCC + "')";
+                string insert = "insert into NHACC values('" + ncc.MaNCC + "',N'" + ncc.TenNCC + "',N'" + ncc.DChiNCC + "','" + ncc.SDTNCC + "','" + ncc.EmailNCC + "')";
                 SqlCommand cmd = new SqlCommand(insert, conn);
                 int kq = cmd.ExecuteNonQuery();
                 return kq > 0;
@@ -92,7 +92,7 @@ namespace DAL
             try
             {
                 conn.Open();
-                string edit = "update NHACC set TENNCC= '" + ncc.TenNCC + "', DIACHI ='" + ncc.DChiNCC + "',SDT= '" + ncc.SDTNCC + "', EMAIL = '" + ncc.EmailNCC + "'   where  MANCC = '" + ncc.MaNCC + "'";
+                string edit = "update NHACC set TENNCC= N'" + ncc.TenNCC + "', DIACHI =N'" + ncc.DChiNCC + "',SDT= '" + ncc.SDTNCC + "', EMAIL = '" + ncc.EmailNCC + "'   where  MANCC = '" + ncc.MaNCC + "'";
                 SqlCommand cmd = new SqlCommand(edit, conn);
                 int kq = cmd.ExecuteNonQuery();
                 return kq > 0;

@@ -37,12 +37,13 @@ namespace GUI
        
         private void addItemToListView(NhaCungCapDTO ncc)
         {
-            ListViewItem item = new ListViewItem(ncc.MaNCC);
-            item.SubItems.Add(ncc.MaNCC);
-            item.SubItems.Add(ncc.TenNCC);
-            item.SubItems.Add(ncc.DChiNCC);
-            item.SubItems.Add(ncc.SDTNCC);
-            item.SubItems.Add(ncc.EmailNCC);
+            string[] itm={ ncc.MaNCC,ncc.TenNCC,ncc.DChiNCC,ncc.SDTNCC,ncc.EmailNCC};
+            ListViewItem item = new ListViewItem(itm);
+            //item.SubItems.Add(ncc.MaNCC);
+            //item.SubItems.Add(ncc.TenNCC);
+            //item.SubItems.Add(ncc.DChiNCC);
+            //item.SubItems.Add(ncc.SDTNCC);
+            //item.SubItems.Add(ncc.EmailNCC);
 
             listView_NCC.Items.Add(item);
 

@@ -40,7 +40,7 @@ namespace DAL
         {
             try
             {
-                string sql = "insert into SANPHAM values ('" + sanPham.MaSP + "','" + sanPham.TenSP + "','" + sanPham.MoTa + "'," + sanPham.Gia + "," + sanPham.SLTonKo + ",'" + sanPham.MaDM + "')";
+                string sql = "insert into SANPHAM values ('" + sanPham.MaSP + "',N'" + sanPham.TenSP + "',N'" + sanPham.MoTa + "'," + sanPham.Gia + "," + sanPham.SLTonKo + ",'" + sanPham.MaDM + "')";
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 int kq = (int)cmd.ExecuteNonQuery();
@@ -115,7 +115,7 @@ namespace DAL
         {
             try
             {
-                string sql = "update SANPHAM set TENSP='" + tmp.TenSP + "' ,MOTA='" + tmp.MoTa + "',GIA=" + tmp.Gia + ",MADM='" + tmp.MaDM + "' where MASP='" + tmp.MaSP + "'";
+                string sql = "update SANPHAM set TENSP=N'" + tmp.TenSP + "' ,MOTA=N'" + tmp.MoTa + "',GIA=" + tmp.Gia + ",MADM='" + tmp.MaDM + "' where MASP='" + tmp.MaSP + "'";
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 int kt = (int)cmd.ExecuteNonQuery();

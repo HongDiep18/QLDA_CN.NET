@@ -16,15 +16,29 @@ namespace DAL
         {
             conn = new SqlConnection(conStr);
         }
-        public int insertHoaDonDAL(string mahd, string makh,string tong, string giamgia, string phaitra)
+        public bool insertHoaDonDAL(string mahd, string makh, string tong, string giamgia, string phaitra)
         {
-            int kq = -1;
-            string sql = "insert into HOADON (MAHD,MAKH,TONGTIEN,GIAMGIA,PHAITRA) values ('"+mahd+"','"+makh+"',"+tong+","+giamgia+","+phaitra+")";
-            conn.Open();
-            SqlCommand cmd = new SqlCommand(sql, conn);
-            kq = (int)cmd.ExecuteNonQuery();
-            conn.Close();
-            return kq;
+            try
+            {
+                
+                string sql = "insert into HOADON (MAHD,MAKH,TONGTIEN,GIAMGIA,PHAITRA) values ('" + mahd + "','" + makh + "'," + tong + "," + giamgia + "," + phaitra + ")";
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                int kq = (int)cmd.ExecuteNonQuery();
+                conn.Close();
+                if(kq>0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }catch (Exception ex)
+            {
+                return false;
+            }
+        
         }
     }
 }

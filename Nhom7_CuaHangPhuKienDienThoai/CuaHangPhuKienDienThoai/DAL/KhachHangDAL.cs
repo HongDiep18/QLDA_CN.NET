@@ -56,51 +56,66 @@ namespace DAL
         }
         public bool InsertKH(string ma, string ten, string email, string sdt, string dc)
         {
-            string sql = "insert into KHACHANG values ('" + ma + "','" + ten + "','" + email + "','" + sdt + "','" + dc + "')";
-            conn.Open();
-            SqlCommand cmd=new SqlCommand(sql, conn);
-            int kt = (int)cmd.ExecuteNonQuery();
-            conn.Close();
-            if (kt > 0)
+            try
             {
-                return true;
+                string sql = "insert into KHACHANG values ('" + ma + "',N'" + ten + "','" + email + "','" + sdt + "',N'" + dc + "')";
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                int kt = (int)cmd.ExecuteNonQuery();
+                conn.Close();
+                if (kt > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
-            else
-            {
-                return false;
-            }    
+            catch { return false; }
         }
         public bool Xoa_KH(KhachHangDTO tmp)
         {
-            string sql = "delete from KHACHANG where MAKH='"+tmp.MaKH+"'";
-            conn.Open();
-            SqlCommand cmd = new SqlCommand(sql, conn);
-            int kt = (int)cmd.ExecuteNonQuery();
-            conn.Close();
-            if (kt > 0)
+            try
             {
-                return true;
+                string sql = "delete from KHACHANG where MAKH='" + tmp.MaKH + "'";
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                int kt = (int)cmd.ExecuteNonQuery();
+                conn.Close();
+                if (kt > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
-            else
+            catch
             {
                 return false;
             }
         }
         public bool Sua_KH(KhachHangDTO tmp)
         {
-            string sql = "update KHACHANG set TENKH='" + tmp.TenKH + "',EMAIL='" + tmp.Email + "',SDT='" + tmp.SDT + "',DIACHI='" + tmp.DChi + "' where MAKH='" + tmp.MaKH + "'";
-            conn.Open();
-            SqlCommand cmd = new SqlCommand(sql, conn);
-            int kt = (int)cmd.ExecuteNonQuery();
-            conn.Close();
-            if (kt > 0)
+            try
             {
-                return true;
+                string sql = "update KHACHANG set TENKH=N'" + tmp.TenKH + "',EMAIL='" + tmp.Email + "',SDT='" + tmp.SDT + "',DIACHI=N'" + tmp.DChi + "' where MAKH='" + tmp.MaKH + "'";
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                int kt = (int)cmd.ExecuteNonQuery();
+                conn.Close();
+                if (kt > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
-            else
-            {
-                return false;
-            }
+            catch { return false;}
         }
     }
 }

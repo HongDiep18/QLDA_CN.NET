@@ -36,7 +36,7 @@ namespace DAL
         {
             try
             {
-                string sql = "insert into DANHMUC values('" + tmp.MaDM.Trim() + "','" + tmp.TenDM.Trim() + "')";
+                string sql = "insert into DANHMUC values('" + tmp.MaDM.Trim() + "',N'" + tmp.TenDM.Trim() + "')";
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 int kt = (int)cmd.ExecuteNonQuery();

@@ -18,7 +18,7 @@ namespace BLL
         }
         public bool insert_HoaDon(string mahd, string makh,string tong, string giam, string phaitra)
         {
-            if(hoaDonDAL.insertHoaDonDAL(mahd, makh,tong,giam,phaitra)!=-1)
+            if(hoaDonDAL.insertHoaDonDAL(mahd, makh,tong,giam,phaitra))
             {
                 return true;
             }

@@ -77,6 +77,9 @@ namespace GUI
 
         private void btn_ThanhToan_Click(object sender, EventArgs e)
         {
+            txtMaKH2.Text = string.Empty;
+            txtTenKH.Text = string.Empty;
+            cbo_KH.Text= string.Empty;
             
             if (lst_GioHang.Items.Count > 0)
             {
@@ -89,7 +92,7 @@ namespace GUI
                 }
                 //lst_GioHang.Clear();
             }
-            float tt = TongTien();
+            double tt = TongTien();
             txtTong2.Text = tt.ToString();
         }
 
@@ -113,7 +116,7 @@ namespace GUI
             txtNgay.Text=DateTime.Now.ToString();
 
         }
-        public float TongTien()
+        public double TongTien()
         {
             float tongtien = 0;
             foreach (ListViewItem tmp in lstThanhToan.Items)
@@ -131,7 +134,7 @@ namespace GUI
             }
             return tongtien;
         }
-        public float GiamGia(bool kt)
+        public double GiamGia(bool kt)
         {
             if (kt == true)
                 return (TongTien() * 5 / 100);
@@ -144,9 +147,9 @@ namespace GUI
             {
                 txtTongTien.Text = TongTien().ToString();
                 txtGiamGia.Text = GiamGia(checkBox_KHThanThiet.Checked).ToString();
-                float pt = TongTien() - GiamGia(checkBox_KHThanThiet.Checked);
+                double pt = TongTien() - GiamGia(checkBox_KHThanThiet.Checked);
                 txtPhaiTra.Text = pt.ToString();
-                float tt = float.Parse(txtTienNhan.Text) - pt;
+                double tt = float.Parse(txtTienNhan.Text) - pt;
                 txtTienThua.Text = tt.ToString();
                 string kq="Tên KH:"+cbo_KH.Text+"\n"+"Số tiền phải trả:"+txtPhaiTra.Text+"\n"+"Mã Hóa Đơn:"+txtMaHD.Text;
                 MessageBox.Show(kq);
