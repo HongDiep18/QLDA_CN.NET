@@ -64,9 +64,13 @@ namespace GUI
                 txtMoTa.Text = item.SubItems[4].Text;
                 cboDM.Text = item.SubItems[5].Text;
                 //Bitmap bm = new Bitmap(Application.StartupPath + "\\Imgs\\" + txtMa.Text.Trim() + ".jpg");
-                Bitmap bm = new Bitmap("C:\\Users\\vuxec\\OneDrive\\Máy tính\\DoAnDotNet\\Nhom7_CuaHangPhuKienDienThoai\\CuaHangPhuKienDienThoai\\GUI\\Imgs\\"+txtMa.Text.Trim()+".jpg");
+                Bitmap bm = new Bitmap("D:\\item\\QLDA_CN.NET\\Nhom7_CuaHangPhuKienDienThoai\\CuaHangPhuKienDienThoai\\GUI\\Imgs\\" + txtMa.Text.Trim()+".jpg");
                 pictureBox_Anh.Image = bm;
                 //MessageBox.Show(Application.StartupPath + "\\Imgs\\" + txtMa.Text.Trim() + ".jpg");
+
+                pictureBox_Anh.Width = 250;  
+                pictureBox_Anh.Height = 150; 
+                pictureBox_Anh.SizeMode = PictureBoxSizeMode.Zoom;  
 
             }
             
