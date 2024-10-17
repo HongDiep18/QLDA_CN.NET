@@ -37,11 +37,7 @@ namespace GUI
         }
 
         NhanVienBLL nvBLL = new NhanVienBLL();
-        private void btn_SanPham_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new frmSanPham());
-            label1.Text = btn_SanPham.Text;
-        }
+     
         public void loadMaNV(string ma)
         {
             MaNV = ma;
@@ -49,34 +45,36 @@ namespace GUI
             string PhanQuyen = nvBLL.get_Chuc_Vu(MaNV);
             if(PhanQuyen.Trim() == "QL")
             {
-                btn_SanPham.Enabled = true;
-                btnNhanVien.Enabled = true;
-                btnNhapSanPham.Enabled=true;
-                btn_DanhMucSp.Enabled = true;
-                btnChiTietSP.Enabled = true;
-                btnKhachHang.Enabled = true;
-                btnThongKe.Enabled = true;
-                btnNhaCungCap.Enabled = true;
+                bánSảnPhẩmToolStripMenuItem.Enabled = true;
+                nhậpSảnPhẩmToolStripMenuItem.Enabled = true;
+                danhMụcSảnPhẩmToolStripMenuItem.Enabled = true;
+                chiTiếtSảnPhẩmToolStripMenuItem.Enabled = true;
+                kháchHàngToolStripMenuItem.Enabled = true;
+                thốngKêToolStripMenuItem.Enabled = true;
+                nhânViênToolStripMenuItem.Enabled = true;
+                nhàCungCấpToolStripMenuItem.Enabled = true;
             }    
             else if(PhanQuyen.Trim()=="NVBH")
             {
-                btn_SanPham.Enabled = true;
-               // btnNhanVien.Enabled = true;
-               // btnNhapSanPham.Enabled = true;
-                btn_DanhMucSp.Enabled = true;
-                btnChiTietSP.Enabled = true;
-                btnKhachHang.Enabled = true;
-                btnNhaCungCap.Enabled = true;
+                bánSảnPhẩmToolStripMenuItem.Enabled = true;
+              //  nhậpSảnPhẩmToolStripMenuItem.Enabled = true;
+                danhMụcSảnPhẩmToolStripMenuItem.Enabled = true;
+                chiTiếtSảnPhẩmToolStripMenuItem.Enabled = true;
+                kháchHàngToolStripMenuItem.Enabled = true;
+                //thốngKêToolStripMenuItem.Enabled = true;
+                //nhânViênToolStripMenuItem.Enabled = true;
+                //nhàCungCấpToolStripMenuItem.Enabled = true;
             }
             else
             {
-               // btn_SanPham.Enabled = true;
-                //btnNhanVien.Enabled = true;
-                btnNhapSanPham.Enabled = true;
-                btn_DanhMucSp.Enabled = true;
-                btnChiTietSP.Enabled = true;
-                //btnKhachHang.Enabled = true;
-                btnNhaCungCap.Enabled = true;
+             //   bánSảnPhẩmToolStripMenuItem.Enabled = true;
+                nhậpSảnPhẩmToolStripMenuItem.Enabled = true;
+                danhMụcSảnPhẩmToolStripMenuItem.Enabled = true;
+                chiTiếtSảnPhẩmToolStripMenuItem.Enabled = true;
+             //   kháchHàngToolStripMenuItem.Enabled = true;
+               // thốngKêToolStripMenuItem.Enabled = true;
+               // nhânViênToolStripMenuItem.Enabled = true;
+                nhàCungCấpToolStripMenuItem.Enabled = true;
 
             }
         }
@@ -96,13 +94,14 @@ namespace GUI
         }
         private void frmMain_Load(object sender, EventArgs e)
         {
-
-            btn_SanPham.Enabled = false;
-            btnNhanVien.Enabled = false;
-            btnNhapSanPham.Enabled = false;
-            btn_DanhMucSp.Enabled = false;
-            btnChiTietSP.Enabled = false;
-            btnKhachHang.Enabled = false;// gán btn chức năng bằng false khởi tạo
+            bánSảnPhẩmToolStripMenuItem.Enabled = false;
+            nhậpSảnPhẩmToolStripMenuItem.Enabled = false;
+            danhMụcSảnPhẩmToolStripMenuItem.Enabled = false;
+            chiTiếtSảnPhẩmToolStripMenuItem.Enabled = false;
+            kháchHàngToolStripMenuItem.Enabled = false;
+            thốngKêToolStripMenuItem.Enabled = false;
+            nhânViênToolStripMenuItem.Enabled = false;
+            nhàCungCấpToolStripMenuItem.Enabled = false;
 
 
             MatKhau =string.Empty;
@@ -127,42 +126,10 @@ namespace GUI
             DangNhap.truyenTENNV = new frmDangNhap.TENNV(loadTenNV);
             DangNhap.truyenMATKHAU = new frmDangNhap.MATKHAU(loadMatKhau);
             DangNhap.Show();
-
-            
-
-
-
         }
 
-        private void btnNhapSanPham_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new frmNhapKho());
-            label1.Text = btnNhapSanPham.Text;
-        }
-
-        private void btn_DanhMucSp_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new frmDanhMuc());
-            label1.Text=btn_DanhMucSp.Text;
-        }
-
-        private void btnChiTietSP_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new frmChiTietSanPham(""));
-            label1.Text=btnChiTietSP.Text;
-        }
-
-        private void btnKhachHang_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new frmKhachHang());
-            label1.Text= btnKhachHang.Text;
-        }
-
-        private void btnNhanVien_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new frmNhanVien());
-            label1.Text=btnNhanVien.Text;
-        }
+       
+       
 
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -174,17 +141,52 @@ namespace GUI
             OpenChildForm(new frmDoiMatKhau(MatKhau,MaNV));
 
         }
-
-        private void btnThongKe_Click(object sender, EventArgs e)
+        private void bánSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new frmThongKe());
-            label1.Text = btnThongKe.Text;
+            OpenChildForm(new frmSanPham(MaNV));
+            label1.Text = "Bán Sản Phẩm";
         }
 
-        private void btnNhaCungCap_Click(object sender, EventArgs e)
+        private void nhậpSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmNhapKho(MaNV));
+            label1.Text = "Nhập Sản Phẩm";
+        }
+
+        private void danhMụcSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmDanhMuc());
+            label1.Text = "Danh Mục Sản Phẩm";
+        }
+
+        private void chiTiếtSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmChiTietSanPham(""));
+            label1.Text = "Chi Tiết Sản Phẩm";
+        }
+
+        private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmKhachHang());
+            label1.Text = "Khách Hàng";
+        }
+
+        private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmNhanVien());
+            label1.Text = "Nhân Viên";
+        }
+
+        private void thốngKêToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmThongKe());
+            label1.Text = "Thống Kê";
+        }
+
+        private void nhàCungCấpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenChildForm(new frmNhaCungCap());
-            label1.Text=btnNhaCungCap.Text;
+            label1.Text = "Nhà Cung Cấp";
         }
     }
 }

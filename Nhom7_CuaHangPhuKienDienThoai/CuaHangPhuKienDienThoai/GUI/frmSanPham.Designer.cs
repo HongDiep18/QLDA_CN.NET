@@ -102,6 +102,7 @@
             this.btn_thanhtoan1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.tab_Xem = new System.Windows.Forms.TabControl();
+            this.checkBox_KhachHangMoi = new System.Windows.Forms.CheckBox();
             this.tabPage_themKHmoi.SuspendLayout();
             this.tab_MuaHang.SuspendLayout();
             this.tab_thanhtoan.SuspendLayout();
@@ -504,6 +505,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.checkBox_KhachHangMoi);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.cbo_KH);
             this.groupBox2.Controls.Add(this.txtDiaChi);
@@ -516,7 +518,7 @@
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Location = new System.Drawing.Point(430, 13);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(435, 188);
+            this.groupBox2.Size = new System.Drawing.Size(435, 216);
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông Tin Khách Hàng";
@@ -649,7 +651,7 @@
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.txtTienNhan);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Location = new System.Drawing.Point(430, 226);
+            this.groupBox1.Location = new System.Drawing.Point(430, 235);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(614, 163);
             this.groupBox1.TabIndex = 16;
@@ -790,6 +792,16 @@
             this.tab_Xem.Size = new System.Drawing.Size(1160, 553);
             this.tab_Xem.TabIndex = 1;
             // 
+            // checkBox_KhachHangMoi
+            // 
+            this.checkBox_KhachHangMoi.AutoSize = true;
+            this.checkBox_KhachHangMoi.Location = new System.Drawing.Point(19, 178);
+            this.checkBox_KhachHangMoi.Name = "checkBox_KhachHangMoi";
+            this.checkBox_KhachHangMoi.Size = new System.Drawing.Size(127, 20);
+            this.checkBox_KhachHangMoi.TabIndex = 12;
+            this.checkBox_KhachHangMoi.Text = "Khách Hàng Mới";
+            this.checkBox_KhachHangMoi.UseVisualStyleBackColor = true;
+            // 
             // frmSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -892,5 +904,6 @@
         private System.Windows.Forms.Button btnLamMoiKH;
         private System.Windows.Forms.Button btnThemKH;
         private System.Windows.Forms.Button btnThemKHmoi;
+        private System.Windows.Forms.CheckBox checkBox_KhachHangMoi;
     }
 }

@@ -16,16 +16,31 @@ namespace BLL
             hoaDonDAL= new HoaDonDAL();
             hoaDonDTO= new HoaDonDTO(); 
         }
-        public bool insert_HoaDon(string mahd, string makh,string tong, string giam, string phaitra)
+        public bool insert_HoaDon(string mahd, string makh,string tong, string giam, string phaitra,string manv)
         {
-            if(hoaDonDAL.insertHoaDonDAL(mahd, makh,tong,giam,phaitra))
+            try
             {
-                return true;
+                if (hoaDonDAL.insertHoaDonDAL(mahd, makh, tong, giam, phaitra,manv))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
-            else
+            catch
             {
                 return false;
             }
+        }
+        public List<HoaDonDTO> get_ds_Thang(string thang,string nam)
+        {
+            return hoaDonDAL.get_ds_HOADON_Thang(thang,nam);
+        }
+        public List<HoaDonDTO> get_ds_Nam( string nam)
+        {
+            return hoaDonDAL.get_ds_HOADON_Nam( nam);
         }
     }
 }

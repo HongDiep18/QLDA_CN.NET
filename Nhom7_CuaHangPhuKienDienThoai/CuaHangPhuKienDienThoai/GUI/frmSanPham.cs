@@ -16,9 +16,11 @@ namespace GUI
 
         SanPhamBLL SP = new SanPhamBLL();
         KhachHangBLL KH = new KhachHangBLL();
-        public frmSanPham()
+        private string MANV { get; set; }
+        public frmSanPham(string mANV)
         {
             InitializeComponent();
+            MANV = mANV;
         }
         bool kiemtrasl(string tmp)
         {
@@ -129,7 +131,7 @@ namespace GUI
                 else
                 {
                     // Xử lý lỗi nếu cần thiết, ví dụ: thông báo cho người dùng
-                    MessageBox.Show($"Giá trị không hợp lệ: {tmp.SubItems[0].Text}");
+                    MessageBox.Show("Lỗi");
                 }
             }
             return tongtien;
@@ -143,7 +145,7 @@ namespace GUI
         private void btn_thanhtoan1_Click(object sender, EventArgs e)
         {
 
-            if (txtTienNhan.Text.Length > 0 && txtTenKH.Text.Length > 0)
+            if (txtTienNhan.Text.Length > 0 && (txtTenKH.Text.Length > 0 || checkBox_KhachHangMoi.Checked == true) && float.Parse(txtTienNhan.Text) > TongTien()) 
             {
                 txtTongTien.Text = TongTien().ToString();
                 txtGiamGia.Text = GiamGia(checkBox_KHThanThiet.Checked).ToString();
@@ -153,6 +155,10 @@ namespace GUI
                 txtTienThua.Text = tt.ToString();
                 string kq="Tên KH:"+cbo_KH.Text+"\n"+"Số tiền phải trả:"+txtPhaiTra.Text+"\n"+"Mã Hóa Đơn:"+txtMaHD.Text;
                 MessageBox.Show(kq);
+            }
+            else
+            {
+                MessageBox.Show("Tiền Nhận Không Đủ");
             }
         }
 
@@ -165,24 +171,53 @@ namespace GUI
 
             HoaDonBLL hoaDonBLL = new HoaDonBLL();
             ChiTietHoaDonBLL chiTietHoaDonBLL = new ChiTietHoaDonBLL();
-            if (txtMaHD.Text.Length > 0 && hoaDonBLL.insert_HoaDon(txtMaHD.Text, txtTenKH.Text, txtTongTien.Text,txtGiamGia.Text,txtPhaiTra.Text))
+            string tmp_MaKH=string.Empty;
+            if (checkBox_KhachHangMoi.Checked==true)
             {
-                foreach (ListViewItem tmp in lstThanhToan.Items)
+                tmp_MaKH = "null";
+                if (txtMaHD.Text.Length > 0 && hoaDonBLL.insert_HoaDon(txtMaHD.Text, tmp_MaKH, txtTongTien.Text, txtGiamGia.Text, txtPhaiTra.Text, MANV))
                 {
-                    float temp1;
-                    int temp;
-                    if (int.TryParse(tmp.SubItems[3].Text, out temp) && float.TryParse(tmp.SubItems[2].Text, out temp1))
+                    foreach (ListViewItem tmp in lstThanhToan.Items)
                     {
-                        ChiTietHoaDonDTO dt = new ChiTietHoaDonDTO(txtMaHD.Text, tmp.SubItems[0].Text, temp, temp1);
-                        chiTietHoaDonBLL.Insert(dt);
+                        float temp1;
+                        int temp;
+                        if (int.TryParse(tmp.SubItems[3].Text, out temp) && float.TryParse(tmp.SubItems[2].Text, out temp1))
+                        {
+                            ChiTietHoaDonDTO dt = new ChiTietHoaDonDTO(txtMaHD.Text, tmp.SubItems[0].Text, temp, temp1);
+                            chiTietHoaDonBLL.Insert(dt);
+                        }
                     }
+                    MessageBox.Show("Xuất hóa đơn thành công !");
                 }
-                MessageBox.Show("Xuất hóa đơn thành công !");
+                else
+                {
+                    MessageBox.Show("Kiểm Tra Điền Mã Hóa Đơn");
+                }
             }
             else
             {
-                MessageBox.Show("Kiểm Tra Điền Mã Hóa Đơn");
+                tmp_MaKH = "'"+txtTenKH.Text+"'";
+                if (txtMaHD.Text.Length > 0 && hoaDonBLL.insert_HoaDon(txtMaHD.Text, tmp_MaKH, txtTongTien.Text, txtGiamGia.Text, txtPhaiTra.Text, MANV))
+                {
+                    foreach (ListViewItem tmp in lstThanhToan.Items)
+                    {
+                        float temp1;
+                        int temp;
+                        if (int.TryParse(tmp.SubItems[3].Text, out temp) && float.TryParse(tmp.SubItems[2].Text, out temp1))
+                        {
+                            ChiTietHoaDonDTO dt = new ChiTietHoaDonDTO(txtMaHD.Text, tmp.SubItems[0].Text, temp, temp1);
+                            chiTietHoaDonBLL.Insert(dt);
+                        }
+                    }
+                    MessageBox.Show("Xuất hóa đơn thành công !");
+                }
+                else
+                {
+                    MessageBox.Show("Kiểm Tra Điền Mã Hóa Đơn");
+                }
             }
+
+           
         }
 
         private void btnThemKH_Click(object sender, EventArgs e)

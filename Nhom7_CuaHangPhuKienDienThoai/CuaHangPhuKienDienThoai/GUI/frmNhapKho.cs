@@ -16,9 +16,11 @@ namespace GUI
     {
         NhaCungCapBLL nccBLL = new NhaCungCapBLL();
         SanPhamBLL spBLL= new SanPhamBLL();
-        public frmNhapKho()
+        private string MANV { get; set; }
+        public frmNhapKho(string mANV)
         {
             InitializeComponent();
+            MANV = mANV;
         }
         public void load_NhaCungCap()
         {
@@ -98,7 +100,7 @@ namespace GUI
                     if (comboBox_NhaCungCap.SelectedItem != null)
                     {
                         txtThanhTien.Text = ThanhTien().ToString();
-                        PhieuNhapDTO pn = new PhieuNhapDTO(txtMaPN.Text, comboBox_NhaCungCap.SelectedValue.ToString(), DateTime.Now.ToString(), float.Parse(txtThanhTien.Text));
+                        PhieuNhapDTO pn = new PhieuNhapDTO(txtMaPN.Text, comboBox_NhaCungCap.SelectedValue.ToString(), DateTime.Now.ToString(), float.Parse(txtThanhTien.Text),MANV);
                         if (pnBLL.insert(pn))
                         {
                             foreach (ListViewItem item in listView_GioHang.Items)

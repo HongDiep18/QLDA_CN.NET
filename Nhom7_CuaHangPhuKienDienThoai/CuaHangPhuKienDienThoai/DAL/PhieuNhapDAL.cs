@@ -18,7 +18,7 @@ namespace DAL
         }
         public bool insert_PhieuNhap(PhieuNhapDTO tmp)
         {
-            string sql = "insert into PHIEUNHAP(MAPN,MANCC,TONGTIEN) values('"+tmp.MaPN+"','"+tmp.MaNCC+"',"+tmp.TongTien+")";
+            string sql = "insert into PHIEUNHAP(MAPN,MANCC,NGAYNHAP,TONGTIEN,MANV) values('"+tmp.MaPN+"','"+tmp.MaNCC+"','"+tmp.NgayNhap+"',"+tmp.TongTien+",'"+tmp.MaNV+"')";
             conn.Open();
             SqlCommand cmd = new SqlCommand(sql, conn);
             int k1= (int)cmd.ExecuteNonQuery();
@@ -31,6 +31,36 @@ namespace DAL
             {
                 return false;
             }
+        }
+        public List<PhieuNhapDTO> get_DS_PN_Thang(string thang,string nam)
+        {
+            List<PhieuNhapDTO> ds= new List<PhieuNhapDTO>();
+            string sql = "select * from PHIEUNHAP where MONTH(NGAYNHAP)=" + thang+ "";
+            conn.Open();
+            SqlCommand cmd= new SqlCommand(sql, conn);
+            SqlDataReader r = cmd.ExecuteReader();
+            while(r.Read())
+            {
+                PhieuNhapDTO tmp = new PhieuNhapDTO(r[0].ToString(), r[1].ToString(), r[2].ToString(), float.Parse(r[3].ToString()), r[4].ToString());
+                ds.Add(tmp);
+            }
+            conn.Close();
+            return ds;
+        }
+        public List<PhieuNhapDTO> get_DS_PN_Nam(string nam)
+        {
+            List<PhieuNhapDTO> ds = new List<PhieuNhapDTO>();
+            string sql = "select * from PHIEUNHAP where YEAR(NGAYNHAP)=" + nam + "";
+            conn.Open();
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            SqlDataReader r = cmd.ExecuteReader();
+            while (r.Read())
+            {
+                PhieuNhapDTO tmp = new PhieuNhapDTO(r[0].ToString(), r[1].ToString(), r[2].ToString(), float.Parse(r[3].ToString()), r[4].ToString());
+                ds.Add(tmp);
+            }
+            conn.Close();
+            return ds;
         }
     }
 }

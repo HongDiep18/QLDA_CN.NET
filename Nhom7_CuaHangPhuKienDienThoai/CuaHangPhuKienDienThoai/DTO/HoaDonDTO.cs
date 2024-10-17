@@ -14,8 +14,9 @@ namespace DTO
         public float TongTien { get; set; }
         public float GiamGia { get; set; }
         public float PhaiTra { get;set; }
+        public string MaNV { get; set; }
         public HoaDonDTO() { }
-        public HoaDonDTO(string maHD, string maKH, string ngayMUA, float tongTien, float giamGia, float phaiTra)
+        public HoaDonDTO(string maHD, string maKH, string ngayMUA, float tongTien, float giamGia, float phaiTra, string maNV)
         {
             MaHD = maHD;
             MaKH = maKH;
@@ -23,6 +24,7 @@ namespace DTO
             TongTien = tongTien;
             GiamGia = giamGia;
             PhaiTra = phaiTra;
+            MaNV = maNV;
         }
     }
 }
