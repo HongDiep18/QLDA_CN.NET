@@ -11,7 +11,7 @@ namespace DAL
 {
     public class NhaCungCapDAL
     {
-        string conStr = "Data Source=DESKTOP-JARJMT7\\SA;Initial Catalog=Nhom7_CuaHangPhuKienDienThoai;User ID=sa;Password=123";
+        string conStr = "Data Source=DESKTOP-JARJMT7\\SA;Initial Catalog=Nhom7_CuaHangPhuKienDienThoai;Persist Security Info=True;User ID=sa;Password=123";
         SqlConnection conn;
         public NhaCungCapDAL() 
         {

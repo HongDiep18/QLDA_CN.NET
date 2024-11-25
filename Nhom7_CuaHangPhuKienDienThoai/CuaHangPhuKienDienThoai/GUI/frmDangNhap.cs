@@ -39,9 +39,6 @@ namespace GUI
             {
                 if(d.MaNV.Trim()==txtManv.Text && d.Password.Trim()==txtMK.Text)
                 {
-                    //MaNV = d.MaNV;
-                    //TenNV = d.TenNV;
-                    //MatKhau = d.Password;
                    if(truyenMANV != null)
                     {
                         truyenMANV(txtManv.Text);
@@ -54,8 +51,7 @@ namespace GUI
                     {
                         truyenMATKHAU(txtMK.Text);
                     }
-                    MessageBox.Show("Đang Nhập Thành Công ");
-                    /*this.DialogResult = DialogResult.OK;*/ // Đặt DialogResult
+                    MessageBox.Show("Đăng Nhập Thành Công ");
                     this.Close(); // Đóng form con
                     return;
                 }    

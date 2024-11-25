@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnChonAnh = new System.Windows.Forms.Button();
             this.pictureBox_Anh = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cboDM = new System.Windows.Forms.ComboBox();
@@ -60,6 +61,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnChonAnh);
             this.groupBox1.Controls.Add(this.pictureBox_Anh);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.cboDM);
@@ -80,6 +82,16 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Chi Tiết";
+            // 
+            // btnChonAnh
+            // 
+            this.btnChonAnh.Location = new System.Drawing.Point(349, 329);
+            this.btnChonAnh.Name = "btnChonAnh";
+            this.btnChonAnh.Size = new System.Drawing.Size(75, 23);
+            this.btnChonAnh.TabIndex = 51;
+            this.btnChonAnh.Text = "Chọn ảnh";
+            this.btnChonAnh.UseVisualStyleBackColor = true;
+            this.btnChonAnh.Click += new System.EventHandler(this.btnChonAnh_Click);
             // 
             // pictureBox_Anh
             // 
@@ -309,6 +321,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1227, 571);
             this.Controls.Add(this.btnLamMoi);
             this.Controls.Add(this.btnEdit);
@@ -354,5 +367,6 @@
         private System.Windows.Forms.Button btnLamMoi;
         private System.Windows.Forms.PictureBox pictureBox_Anh;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnChonAnh;
     }
 }

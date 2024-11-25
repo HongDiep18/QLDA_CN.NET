@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -53,24 +54,42 @@ namespace GUI
             cboDM.ValueMember = "MaDM";
         }
 
+
+        // Đoạn mã để hiển thị thông tin sản phẩm khi chọn sản phẩm trong ListView
         private void listView_SanPham_SelectedIndexChanged(object sender, EventArgs e)
         {
-            foreach(ListViewItem item in listView_SanPham.SelectedItems)
+            if (listView_SanPham.SelectedItems.Count > 0)
             {
-                txtMa.Text = item.SubItems[0].Text;
-                txtTen.Text = item.SubItems[1].Text;
-                txtSL.Text = item.SubItems[2].Text;
-                txtGia.Text = item.SubItems[3].Text;
-                txtMoTa.Text = item.SubItems[4].Text;
-                cboDM.Text = item.SubItems[5].Text;
-                //Bitmap bm = new Bitmap(Application.StartupPath + "\\Imgs\\" + txtMa.Text.Trim() + ".jpg");
-                Bitmap bm = new Bitmap("C:\\Users\\vuxec\\OneDrive\\Máy tính\\DoAnDotNet\\Nhom7_CuaHangPhuKienDienThoai\\CuaHangPhuKienDienThoai\\GUI\\Imgs\\"+txtMa.Text.Trim()+".jpg");
-                pictureBox_Anh.Image = bm;
-                //MessageBox.Show(Application.StartupPath + "\\Imgs\\" + txtMa.Text.Trim() + ".jpg");
+                ListViewItem item = listView_SanPham.SelectedItems[0];
+                txtMa.Text = item.SubItems[0].Text.Trim();
+                txtTen.Text = item.SubItems[1].Text.Trim();
+                txtSL.Text = item.SubItems[2].Text.Trim();
+                txtGia.Text = item.SubItems[3].Text.Trim();
+                txtMoTa.Text = item.SubItems[4].Text.Trim();
+                cboDM.Text = item.SubItems[5].Text.Trim();
 
+                // Hiển thị ảnh sản phẩm
+                string imagePath = "C:\\Users\\vuxec\\OneDrive\\Máy tính\\QLDA_CN.NET\\QLDA_CN.NET\\Nhom7_CuaHangPhuKienDienThoai\\CuaHangPhuKienDienThoai\\GUI\\Imgs\\" + txtMa.Text.Trim() + ".jpg";
+
+                try
+                {
+                    Bitmap bm = new Bitmap(imagePath);
+                    pictureBox_Anh.Image = bm;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi tải ảnh: " + ex.Message);
+                }
+
+
+               
+                
             }
-            
         }
+
+        
+
+
         public void Load_SP_TheoDanhMuc(string ma)
         {
             SanPhamBLL spBLL = new SanPhamBLL();
@@ -101,12 +120,24 @@ namespace GUI
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if(cboDM.SelectedValue==null)
+            if (cboDM.SelectedValue == null)
             {
-                SanPhamDTO sp = new SanPhamDTO(txtMa.Text, txtTen.Text, txtMoTa.Text, float.Parse(txtGia.Text),/*int.Parse(txtSL.Text)*/0, cboDM.Text);// thêm sản phẩm mới thì số lượng tồn là 0, thông qua thao tác nhập sản phẩm để điều chỉnh số lượng
+                SanPhamDTO sp = new SanPhamDTO(txtMa.Text, txtTen.Text, txtMoTa.Text, float.Parse(txtGia.Text), 0, cboDM.Text);
                 SanPhamBLL spBLL = new SanPhamBLL();
                 if (spBLL.insert_sanPham(sp))
                 {
+                    // Thêm phần xử lý ảnh ở đây
+                    if (pictureBox_Anh.Image != null)
+                    {
+                        string destinationFolder = Path.Combine(Application.StartupPath, "ProductImages");
+                        if (!Directory.Exists(destinationFolder))
+                        {
+                            Directory.CreateDirectory(destinationFolder);
+                        }
+                        string imagePath = Path.Combine(destinationFolder, txtMa.Text.Trim() + ".jpg");
+                        pictureBox_Anh.Image.Save(imagePath, System.Drawing.Imaging.ImageFormat.Jpeg);
+                    }
+
                     MessageBox.Show("Thêm Thành Công");
                 }
                 else
@@ -116,10 +147,22 @@ namespace GUI
             }
             else
             {
-                SanPhamDTO sp = new SanPhamDTO(txtMa.Text, txtTen.Text, txtMoTa.Text, float.Parse(txtGia.Text),/*int.Parse(txtSL.Text)*/0, cboDM.SelectedValue.ToString());// thêm sản phẩm mới thì số lượng tồn là 0, thông qua thao tác nhập sản phẩm để điều chỉnh số lượng
+                SanPhamDTO sp = new SanPhamDTO(txtMa.Text, txtTen.Text, txtMoTa.Text, float.Parse(txtGia.Text), 0, cboDM.SelectedValue.ToString());
                 SanPhamBLL spBLL = new SanPhamBLL();
                 if (spBLL.insert_sanPham(sp))
                 {
+                    // Thêm phần xử lý ảnh ở đây (giống như trên)
+                    if (pictureBox_Anh.Image != null)
+                    {
+                        string destinationFolder = Path.Combine(Application.StartupPath, "ProductImages");
+                        if (!Directory.Exists(destinationFolder))
+                        {
+                            Directory.CreateDirectory(destinationFolder);
+                        }
+                        string imagePath = Path.Combine(destinationFolder, txtMa.Text.Trim() + ".jpg");
+                        pictureBox_Anh.Image.Save(imagePath, System.Drawing.Imaging.ImageFormat.Jpeg);
+                    }
+
                     MessageBox.Show("Thêm Thành Công");
                 }
                 else
@@ -168,6 +211,62 @@ namespace GUI
             else
             {
                 MessageBox.Show("Chọn sản phẩm cần Sửa");
+            }
+        }
+
+        private void btnChonAnh_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.InitialDirectory = @"C:\Users\vuxec\OneDrive\Desktop";
+                openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
+                openFileDialog.Title = "Chọn hình ảnh sản phẩm";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        string sourceFilePath = openFileDialog.FileName;
+                        string destinationFolder = @"D:\GITHUB\HocKy5\CongNgheNet\test_baocao1\QLDA_CN.NET\Nhom7_CuaHangPhuKienDienThoai\CuaHangPhuKienDienThoai\GUI\Imgs";
+
+                        // Tạo thư mục nếu chưa tồn tại
+                        if (!Directory.Exists(destinationFolder))
+                        {
+                            Directory.CreateDirectory(destinationFolder);
+                        }
+
+                        // Tạo tên file mới sử dụng mã sản phẩm
+                        string newFileName = txtMa.Text.Trim() + Path.GetExtension(sourceFilePath);
+                        string destinationFilePath = Path.Combine(destinationFolder, newFileName);
+
+                        // Giải phóng ảnh cũ trong PictureBox nếu có
+                        if (pictureBox_Anh.Image != null)
+                        {
+                            var oldImage = pictureBox_Anh.Image;
+                            pictureBox_Anh.Image = null;
+                            oldImage.Dispose();
+                        }
+
+                        // Đọc ảnh vào memory và tạo bản sao
+                        using (var sourceImage = new Bitmap(sourceFilePath))
+                        {
+                            // Tạo bản sao của ảnh
+                            using (Bitmap copy = new Bitmap(sourceImage))
+                            {
+                                // Lưu bản sao vào thư mục đích
+                                copy.Save(destinationFilePath);
+                                // Gán ảnh mới cho PictureBox
+                                pictureBox_Anh.Image = new Bitmap(destinationFilePath);
+                            }
+                        }
+
+                        MessageBox.Show("Đã chọn và lưu ảnh thành công vào thư mục " + destinationFolder);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Có lỗi xảy ra: " + ex.Message + "\nVui lòng thử lại.");
+                    }
+                }
             }
         }
     }

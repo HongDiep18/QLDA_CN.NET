@@ -10,7 +10,7 @@ namespace DAL
 {
     public class ChiTietPN_DAL
     {
-        string conStr = "Data Source=DESKTOP-JARJMT7\\SA;Initial Catalog=Nhom7_CuaHangPhuKienDienThoai;User ID=sa;Password=123";
+        string conStr = "Data Source=DESKTOP-JARJMT7\\SA;Initial Catalog=Nhom7_CuaHangPhuKienDienThoai;Persist Security Info=True;User ID=sa;Password=123";
         SqlConnection conn;
         public ChiTietPN_DAL()
         {

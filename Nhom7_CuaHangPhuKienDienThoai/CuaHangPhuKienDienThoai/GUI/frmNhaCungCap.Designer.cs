@@ -55,7 +55,7 @@
             // 
             // btnLamMoi
             // 
-            this.btnLamMoi.Location = new System.Drawing.Point(414, 354);
+            this.btnLamMoi.Location = new System.Drawing.Point(440, 521);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(103, 39);
             this.btnLamMoi.TabIndex = 27;
@@ -65,7 +65,7 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(280, 354);
+            this.btnSua.Location = new System.Drawing.Point(306, 521);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(103, 39);
             this.btnSua.TabIndex = 26;
@@ -75,7 +75,7 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(146, 354);
+            this.btnXoa.Location = new System.Drawing.Point(172, 521);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(103, 39);
             this.btnXoa.TabIndex = 25;
@@ -85,7 +85,7 @@
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(12, 354);
+            this.btnThem.Location = new System.Drawing.Point(38, 521);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(103, 39);
             this.btnThem.TabIndex = 24;
@@ -115,7 +115,7 @@
             this.listView_NCC.Location = new System.Drawing.Point(12, 47);
             this.listView_NCC.MultiSelect = false;
             this.listView_NCC.Name = "listView_NCC";
-            this.listView_NCC.Size = new System.Drawing.Size(588, 282);
+            this.listView_NCC.Size = new System.Drawing.Size(830, 456);
             this.listView_NCC.TabIndex = 22;
             this.listView_NCC.UseCompatibleStateImageBehavior = false;
             this.listView_NCC.View = System.Windows.Forms.View.Details;
@@ -157,9 +157,9 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(622, 50);
+            this.groupBox1.Location = new System.Drawing.Point(858, 36);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(472, 331);
+            this.groupBox1.Size = new System.Drawing.Size(512, 357);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Nhà Cung Cấp";
@@ -249,7 +249,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1154, 612);
+            this.ClientSize = new System.Drawing.Size(1406, 740);
             this.Controls.Add(this.btnLamMoi);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
