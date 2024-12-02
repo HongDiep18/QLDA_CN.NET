@@ -69,7 +69,7 @@ namespace GUI
                 cboDM.Text = item.SubItems[5].Text.Trim();
 
                 // Hiển thị ảnh sản phẩm
-                string imagePath = "C:\\Users\\vuxec\\OneDrive\\Máy tính\\QLDA_CN.NET\\QLDA_CN.NET\\Nhom7_CuaHangPhuKienDienThoai\\CuaHangPhuKienDienThoai\\GUI\\Imgs\\" + txtMa.Text.Trim() + ".jpg";
+                string imagePath = "C:\\Users\\vuxec\\OneDrive\\Máy tính\\QLDA_NET\\QLDA_CN.NET\\Nhom7_CuaHangPhuKienDienThoai\\CuaHangPhuKienDienThoai\\GUI\\Imgs\\" + txtMa.Text.Trim() + ".jpg";
 
                 try
                 {

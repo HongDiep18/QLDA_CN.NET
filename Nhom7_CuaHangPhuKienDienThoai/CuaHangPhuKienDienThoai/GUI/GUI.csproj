@@ -33,8 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +52,66 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaoCao_DoanhThu_NV.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaoCao_DoanhThu_NV.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bao_Ca0_NhapHang_SP.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bao_Ca0_NhapHang_SP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bao_Cao_DoanhThu_Time.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bao_Cao_DoanhThu_Time.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bao_Cao_NhapHang.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bao_Cao_NhapHang.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bao_Cao_SanPham.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bao_Cao_SanPham.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmBao_Cao1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBao_Cao1.Designer.cs">
+      <DependentUpon>frmBao_Cao1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBao_Cao2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBao_Cao2.Designer.cs">
+      <DependentUpon>frmBao_Cao2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBao_Cao3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBao_Cao3.Designer.cs">
+      <DependentUpon>frmBao_Cao3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBao_Cao4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBao_Cao4.Designer.cs">
+      <DependentUpon>frmBao_Cao4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBao_Cao5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBao_Cao5.Designer.cs">
+      <DependentUpon>frmBao_Cao5.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmChiTietSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,8 +178,67 @@
     <Compile Include="frmThongKe.Designer.cs">
       <DependentUpon>frmThongKe.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Report_HoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Report_HoaDon.Designer.cs">
+      <DependentUpon>frm_Report_HoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Report_PhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Report_PhieuNhap.Designer.cs">
+      <DependentUpon>frm_Report_PhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HoaDon.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PhieuNhap.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhieuNhap.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BaoCao_DoanhThu_NV.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BaoCao_DoanhThu_NV.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bao_Ca0_NhapHang_SP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Bao_Ca0_NhapHang_SP.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bao_Cao_DoanhThu_Time.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Bao_Cao_DoanhThu_Time.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bao_Cao_NhapHang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Bao_Cao_NhapHang.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bao_Cao_SanPham.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Bao_Cao_SanPham.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBao_Cao1.resx">
+      <DependentUpon>frmBao_Cao1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBao_Cao2.resx">
+      <DependentUpon>frmBao_Cao2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBao_Cao3.resx">
+      <DependentUpon>frmBao_Cao3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBao_Cao4.resx">
+      <DependentUpon>frmBao_Cao4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBao_Cao5.resx">
+      <DependentUpon>frmBao_Cao5.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmChiTietSanPham.resx">
       <DependentUpon>frmChiTietSanPham.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +272,20 @@
     <EmbeddedResource Include="frmThongKe.resx">
       <DependentUpon>frmThongKe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_Report_HoaDon.resx">
+      <DependentUpon>frm_Report_HoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Report_PhieuNhap.resx">
+      <DependentUpon>frm_Report_PhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDon.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HoaDon.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhieuNhap.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PhieuNhap.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -179,7 +318,9 @@
       <Name>DTO</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Imgs\SP001.jpg" />
     <Content Include="Imgs\SP002.jpg" />

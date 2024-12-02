@@ -43,6 +43,9 @@ namespace GUI
         }
         private void frmNhapKho_Load(object sender, EventArgs e)
         {
+            PhieuNhapBLL pnBLL = new PhieuNhapBLL();
+            string ma = "PN" + DateTime.Today.ToString("yyMMdd") + string.Format("{0:00}",pnBLL.Dem_SL_PN()+ 1);
+            txtMaPN.Text = ma;
             listView_SanPham.Items.Clear();
             load_NhaCungCap();
             load_Kho();
@@ -141,6 +144,12 @@ namespace GUI
         {
             listView_GioHang.Items.Clear();
             frmNhapKho_Load(sender, e);
+        }
+
+        private void btnInPN_Click(object sender, EventArgs e)
+        {
+            frm_Report_PhieuNhap now = new frm_Report_PhieuNhap(txtMaPN.Text.Trim());
+            now.ShowDialog();
         }
     }
 }

@@ -62,5 +62,23 @@ namespace DAL
             conn.Close();
             return ds;
         }
+        public int Dem_SL_PN()
+        {
+            string ngay = DateTime.Today.ToString("yyyy-MM-dd");
+            string sql = "select count (*) from PHIEUNHAP where NGAYNHAP='"+ngay+"'";
+            conn.Open();
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            int kq = (int)cmd.ExecuteScalar();
+            conn.Close();
+            if (kq > 0)
+            {
+                return kq;
+            }
+            else
+            {
+                return 0;
+            }
+
+        }
     }
 }

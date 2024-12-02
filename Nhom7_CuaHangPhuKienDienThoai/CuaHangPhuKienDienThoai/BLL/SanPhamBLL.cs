@@ -40,5 +40,9 @@ namespace BLL
         {
             return sanphamDAL.XuaSanPham(tmp);
         }
+        public int Dem_SL_HD()
+        {
+            return sanphamDAL.Dem_SL_HD();
+        }
     }
 }

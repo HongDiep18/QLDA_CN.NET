@@ -40,9 +40,9 @@
             // 
             // btnHuy
             // 
-            this.btnHuy.Location = new System.Drawing.Point(425, 250);
+            this.btnHuy.Location = new System.Drawing.Point(478, 250);
             this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(125, 44);
+            this.btnHuy.Size = new System.Drawing.Size(141, 44);
             this.btnHuy.TabIndex = 11;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
@@ -50,9 +50,9 @@
             // 
             // btnDoiMK
             // 
-            this.btnDoiMK.Location = new System.Drawing.Point(148, 250);
+            this.btnDoiMK.Location = new System.Drawing.Point(166, 250);
             this.btnDoiMK.Name = "btnDoiMK";
-            this.btnDoiMK.Size = new System.Drawing.Size(125, 44);
+            this.btnDoiMK.Size = new System.Drawing.Size(141, 44);
             this.btnDoiMK.TabIndex = 10;
             this.btnDoiMK.Text = "Đổi Mật Khẩu";
             this.btnDoiMK.UseVisualStyleBackColor = true;
@@ -60,57 +60,57 @@
             // 
             // txtMKM1
             // 
-            this.txtMKM1.Location = new System.Drawing.Point(244, 134);
+            this.txtMKM1.Location = new System.Drawing.Point(274, 134);
             this.txtMKM1.Name = "txtMKM1";
-            this.txtMKM1.Size = new System.Drawing.Size(298, 22);
+            this.txtMKM1.Size = new System.Drawing.Size(335, 22);
             this.txtMKM1.TabIndex = 9;
             // 
             // txtMKC
             // 
-            this.txtMKC.Location = new System.Drawing.Point(244, 83);
+            this.txtMKC.Location = new System.Drawing.Point(274, 83);
             this.txtMKC.Name = "txtMKC";
-            this.txtMKC.Size = new System.Drawing.Size(298, 22);
+            this.txtMKC.Size = new System.Drawing.Size(335, 22);
             this.txtMKC.TabIndex = 8;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(145, 137);
+            this.label2.Location = new System.Drawing.Point(163, 137);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 16);
+            this.label2.Size = new System.Drawing.Size(99, 16);
             this.label2.TabIndex = 7;
             this.label2.Text = "Mật Khẩu Mới";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(145, 86);
+            this.label1.Location = new System.Drawing.Point(163, 86);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 16);
+            this.label1.Size = new System.Drawing.Size(92, 16);
             this.label1.TabIndex = 6;
             this.label1.Text = "Mật Khẩu Cũ";
             // 
             // txtMKM2
             // 
-            this.txtMKM2.Location = new System.Drawing.Point(244, 184);
+            this.txtMKM2.Location = new System.Drawing.Point(274, 184);
             this.txtMKM2.Name = "txtMKM2";
-            this.txtMKM2.Size = new System.Drawing.Size(298, 22);
+            this.txtMKM2.Size = new System.Drawing.Size(335, 22);
             this.txtMKM2.TabIndex = 13;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(145, 187);
+            this.label3.Location = new System.Drawing.Point(163, 187);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 16);
+            this.label3.Size = new System.Drawing.Size(99, 16);
             this.label3.TabIndex = 12;
             this.label3.Text = "Mật Khẩu Mới";
             // 
             // frmDoiMatKhau
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(979, 587);
+            this.ClientSize = new System.Drawing.Size(1101, 587);
             this.Controls.Add(this.txtMKM2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnHuy);
@@ -119,6 +119,7 @@
             this.Controls.Add(this.txtMKC);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmDoiMatKhau";
             this.Text = "frmDoiMatKhau";
             this.Load += new System.EventHandler(this.frmDoiMatKhau_Load);

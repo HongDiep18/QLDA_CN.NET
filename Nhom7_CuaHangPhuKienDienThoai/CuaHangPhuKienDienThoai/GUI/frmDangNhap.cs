@@ -62,7 +62,20 @@ namespace GUI
         private void frmDangNhap_Load(object sender, EventArgs e)
         {
             load_NV();
+            txtMK.PasswordChar = '*';
       
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox1.Checked)
+            {
+                txtMK.PasswordChar = '\0';
+            }
+            else
+            {
+                txtMK.PasswordChar = '*';
+            }
         }
     }
 }

@@ -131,5 +131,36 @@ namespace GUI
                 MessageBox.Show("Chọn Tháng Chọn Năm");
             }
         }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            frmBao_Cao1 f = new frmBao_Cao1();
+            f.ShowDialog();
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            frmBao_Cao2 f = new frmBao_Cao2();
+            f.ShowDialog();
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            frmBao_Cao3 f = new frmBao_Cao3();
+            f.ShowDialog();
+
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            frmBao_Cao4 f = new frmBao_Cao4();
+            f.ShowDialog();
+        }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            frmBao_Cao5 f = new frmBao_Cao5();
+            f.ShowDialog();
+        }
     }
 }

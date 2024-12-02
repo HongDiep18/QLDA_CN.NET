@@ -134,5 +134,23 @@ namespace DAL
                 return false;
             }
         }
+        public int Dem_SL_HD()
+        {
+            string ngay = DateTime.Today.ToString("yyyy-MM-dd");
+            string sql = "select count (*) from HOADON where NGAYDATHANG='"+ngay+"'";
+            conn.Open();
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            int kq = (int)cmd.ExecuteScalar();
+            conn.Close();
+            if (kq > 0)
+            {
+                return kq;
+            }
+            else
+            {
+                return 0;
+            }    
+
+        }
     }
 }

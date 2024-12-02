@@ -79,6 +79,8 @@ namespace GUI
 
         private void btn_ThanhToan_Click(object sender, EventArgs e)
         {
+            string ma = "HD" + DateTime.Today.ToString("yyMMdd") + string.Format("{0:00}",SP.Dem_SL_HD()+1);
+            txtMaHD.Text = ma;
             txtMaKH2.Text = string.Empty;
             txtTenKH.Text = string.Empty;
             cbo_KH.Text= string.Empty;
@@ -216,7 +218,8 @@ namespace GUI
                     MessageBox.Show("Kiểm Tra Điền Mã Hóa Đơn");
                 }
             }
-
+            frm_Report_HoaDon f = new frm_Report_HoaDon(txtMaHD.Text.Trim());
+            f.ShowDialog();
            
         }
 

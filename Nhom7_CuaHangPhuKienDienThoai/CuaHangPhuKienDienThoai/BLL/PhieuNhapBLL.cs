@@ -29,5 +29,9 @@ namespace BLL
         {
             return pnDAL.get_DS_PN_Nam(nam);
         }
+        public int Dem_SL_PN()
+        {
+            return pnDAL.Dem_SL_PN();
+        }
     }
 }
